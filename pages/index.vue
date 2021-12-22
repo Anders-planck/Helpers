@@ -1,0 +1,5 @@
+<template>
+  <welcome/>
+</template>
+
+
