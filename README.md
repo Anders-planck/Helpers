@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Helpers site 
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
@@ -32,4 +32,4 @@ Build the application for production:
 yarn build
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).# Helpers
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
