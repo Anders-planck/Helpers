@@ -8,8 +8,8 @@
         </div>
         <div class="flex justify-end items-center space-x-2 md:space-x-4">
             <h1 class="hidden py-2 px-4 lg:inline-block  font-bold tracking-wide text-dark ">Options ></h1>
-            <button class="cursor-pointer  text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-gray-500 shadow-sm border-gray-200 border-2  transition-all duration-200">Add section</button>
-            <button class="cursor-pointer  text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-white  hover:ring-1 hover:ring-red-600 hover:scale-95 bg-red-600 shadow-lg shadow-red-600/30  transition-all duration-200">Remove section</button>
+            <button class="cursor-pointer  text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-gray-500 shadow-sm border-gray-200 border-2 hover:ring-1 hover:ring-dark hover:scale-95 transition-all duration-200">Add section</button>
+            <button class="cursor-pointer  text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-red-900  hover:ring-1 hover:ring-red-600 hover:scale-95 bg-red-100 shadow-lg shadow-red-100/30  transition-all duration-200">Remove section</button>
         </div>
     </div>
 </template>

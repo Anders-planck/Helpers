@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full px-2">
-        <div class="flex justify-between items-center">
+    <div class="w-full px-2 space-y-16">
+        <div class="flex justify-between items-center ">
             <h1 class="text-sm font-bold text-gray-500 uppercase">Lorem ipsum dolor sit.</h1>
             <nav class="flex justify-between items-center space-x-2">
                 <button @click="state='preview'"
@@ -69,7 +69,7 @@ import 'vue-prism-editor/dist/prismeditor.min.css';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
-import 'prismjs/themes/prism-editor.css';
+import '@/assets/css/prism-editor.css';
 export default {
     data: () => ({
         code: 'console.log("Hello World")',
@@ -104,7 +104,7 @@ export default {
                     </div>
                 </div>
             </div>
-            `
+              `
         },
     }),
     methods:{
