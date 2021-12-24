@@ -26,7 +26,7 @@
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
-                                    title:'hero section',
+                                    title:'hero sections',
                                     items:[
                                         {
                                             id: 1,
