@@ -13,4 +13,14 @@ export default defineNuxtConfig({
     },
   },
   css: ['@/assets/css/tailwind.scss'],
+  router: {
+    linkExactActiveClass: 'text-dark',
+  },
+   loading: {
+    color: 'DodgerBlue',
+    height: '10px',
+    continuous: true,
+    duration: 3000
+  },
+  
 })

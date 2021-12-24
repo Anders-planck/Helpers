@@ -9,7 +9,20 @@ module.exports = {
   ],
   media:false,
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+      'primary': '#033038ff',
+      'secondary': '#2b575eff',
+      'metal': '#052a30ff',
+      'jaune': '#f4d06fff',
+      dark: '#020203ff',
+      white: '#f4faffff',
+      'jean':'#00AAFFff',
+      'bleuTherne':'#1F2937'
+    },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
