@@ -6,7 +6,7 @@
                 <nav class="space-x-1 lg:space-x-2">
                     <a class="p-2  text-gray-500 hover:text-dark transition-all duration-200" href="/templates">Templates</a>
                     <a class="p-2  text-gray-500 hover:text-dark transition-all duration-200" href="#">Functionalities</a>
-                    <a class="p-2  text-gray-500 hover:text-dark transition-all duration-200" href="#">Plugins</a>
+                    <a class="p-2  text-gray-500 hover:text-dark transition-all duration-200" href="/plugins">Plugins</a>
                 </nav>
             </div>
             <nav class="space-x-1 lg:space-x-2">

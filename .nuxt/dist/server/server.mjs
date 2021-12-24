@@ -112,13 +112,14 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /components/example.vue ($id_b9253967)
 // - /components/get-started.vue ($id_645fb6af)
 // - /pages/index.vue ($id_cca58e97)
-// - /components/content.vue ($id_3032adb6)
-// - /node_modules/vue-prism-editor/dist/prismeditor.esm.js ($id_e506e72f)
-// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /components/Menu.vue ($id_b1d32007)
 // - /components/card.vue ($id_d9dfd282)
 // - /components/Section.vue ($id_5ff493dc)
 // - /components/contents-sections.vue ($id_0b3ec488)
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /components/content.vue ($id_3032adb6)
+// - /node_modules/vue-prism-editor/dist/prismeditor.esm.js ($id_e506e72f)
+// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
 // - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
@@ -919,7 +920,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/tailwind.sc
 
 // --------------------
 const $id_a0d95d60 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");\n/*\n! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com\n*/\n/*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n::before,\n::after {\n  --tw-content: '';\n}\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\nabbr[title] {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n/*\nRemove the default font size and weight for headings.\n*/\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n/*\nAdd the correct font weight in Edge and Safari.\n*/\nb,\nstrong {\n  font-weight: bolder;\n}\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n/*\nAdd the correct font size in all browsers.\n*/\nsmall {\n  font-size: 80%;\n}\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsub {\n  bottom: -0.25em;\n}\nsup {\n  top: -0.5em;\n}\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\nbutton,\nselect {\n  text-transform: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n:-moz-focusring {\n  outline: auto;\n}\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\nprogress {\n  vertical-align: baseline;\n}\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n/*\nAdd the correct display in Chrome and Safari.\n*/\nsummary {\n  display: list-item;\n}\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n  padding: 0;\n}\nlegend {\n  padding: 0;\n}\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n/*\nPrevent resizing textareas horizontally by default.\n*/\ntextarea {\n  resize: vertical;\n}\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n/*\nSet the default cursor for buttons.\n*/\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n[hidden] {\n  display: none;\n}\n*, ::before, ::after{\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur: var(--tw-empty,/*!*/ /*!*/);\n  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);\n  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);\n  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);\n  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-invert: var(--tw-empty,/*!*/ /*!*/);\n  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);\n  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);\n  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.aspect-h-1{\n  --tw-aspect-h: 1;\n}\n.aspect-w-2{\n  position: relative;\n  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);\n  --tw-aspect-w: 2;\n}\n.aspect-w-2 > *{\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n.absolute{\n  position: absolute;\n}\n.relative{\n  position: relative;\n}\n.sticky{\n  position: -webkit-sticky;\n  position: sticky;\n}\n.inset-x-0{\n  left: 0px;\n  right: 0px;\n}\n.top-0{\n  top: 0px;\n}\n.bottom-full{\n  bottom: 100%;\n}\n.top-full{\n  top: 100%;\n}\n.left-1\\/2{\n  left: 50%;\n}\n.z-50{\n  z-index: 50;\n}\n.col-span-3{\n  grid-column: span 3 / span 3;\n}\n.my-4{\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\n.my-16{\n  margin-top: 4rem;\n  margin-bottom: 4rem;\n}\n.my-8{\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.mt-4{\n  margin-top: 1rem;\n}\n.mb-2\\.5{\n  margin-bottom: 0.625rem;\n}\n.mb-2{\n  margin-bottom: 0.5rem;\n}\n.-mt-px{\n  margin-top: -1px;\n}\n.-ml-2{\n  margin-left: -0.5rem;\n}\n.mt-2{\n  margin-top: 0.5rem;\n}\n.ml-4{\n  margin-left: 1rem;\n}\n.mt-16{\n  margin-top: 4rem;\n}\n.mb-8{\n  margin-bottom: 2rem;\n}\n.block{\n  display: block;\n}\n.inline-block{\n  display: inline-block;\n}\n.flex{\n  display: flex;\n}\n.grid{\n  display: grid;\n}\n.hidden{\n  display: none;\n}\n.h-5{\n  height: 1.25rem;\n}\n.h-6{\n  height: 1.5rem;\n}\n.h-\\[50vh\\]{\n  height: 50vh;\n}\n.h-full{\n  height: 100%;\n}\n.h-60{\n  height: 15rem;\n}\n.h-10{\n  height: 2.5rem;\n}\n.w-screen{\n  width: 100vw;\n}\n.w-full{\n  width: 100%;\n}\n.w-5{\n  width: 1.25rem;\n}\n.w-6{\n  width: 1.5rem;\n}\n.w-2\\/3{\n  width: 66.666667%;\n}\n.w-72{\n  width: 18rem;\n}\n.w-10{\n  width: 2.5rem;\n}\n.w-3\\/5{\n  width: 60%;\n}\n.-translate-y-full{\n  --tw-translate-y: -100%;\n  transform: var(--tw-transform);\n}\n.translate-y-full{\n  --tw-translate-y: 100%;\n  transform: var(--tw-transform);\n}\n.-rotate-\\[8deg\\]{\n  --tw-rotate: -8deg;\n  transform: var(--tw-transform);\n}\n.scale-0{\n  --tw-scale-x: 0;\n  --tw-scale-y: 0;\n  transform: var(--tw-transform);\n}\n.cursor-pointer{\n  cursor: pointer;\n}\n.grid-flow-row{\n  grid-auto-flow: row;\n}\n.grid-cols-3{\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n}\n.grid-cols-1{\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-rows-1{\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n}\n.flex-col{\n  flex-direction: column;\n}\n.flex-col-reverse{\n  flex-direction: column-reverse;\n}\n.flex-wrap{\n  flex-wrap: wrap;\n}\n.items-start{\n  align-items: flex-start;\n}\n.items-end{\n  align-items: flex-end;\n}\n.items-center{\n  align-items: center;\n}\n.justify-start{\n  justify-content: flex-start;\n}\n.justify-end{\n  justify-content: flex-end;\n}\n.justify-center{\n  justify-content: center;\n}\n.justify-between{\n  justify-content: space-between;\n}\n.justify-around{\n  justify-content: space-around;\n}\n.justify-evenly{\n  justify-content: space-evenly;\n}\n.gap-6{\n  gap: 1.5rem;\n}\n.gap-8{\n  gap: 2rem;\n}\n.gap-x-8{\n  -moz-column-gap: 2rem;\n       column-gap: 2rem;\n}\n.gap-y-6{\n  row-gap: 1.5rem;\n}\n.space-y-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\n.space-x-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.25rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(1rem * var(--tw-space-x-reverse));\n  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-y-6 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));\n}\n.space-y-8 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2rem * var(--tw-space-y-reverse));\n}\n.space-y-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1rem * var(--tw-space-y-reverse));\n}\n.space-y-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));\n}\n.space-y-16 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(4rem * var(--tw-space-y-reverse));\n}\n.overflow-hidden{\n  overflow: hidden;\n}\n.overflow-scroll{\n  overflow: scroll;\n}\n.overflow-x-hidden{\n  overflow-x: hidden;\n}\n.scroll-smooth{\n  scroll-behavior: smooth;\n}\n.rounded-lg{\n  border-radius: 0.5rem;\n}\n.rounded-md{\n  border-radius: 0.375rem;\n}\n.rounded-t-lg{\n  border-top-left-radius: 0.5rem;\n  border-top-right-radius: 0.5rem;\n}\n.border-2{\n  border-width: 2px;\n}\n.border{\n  border-width: 1px;\n}\n.border-t-2{\n  border-top-width: 2px;\n}\n.border-b-2{\n  border-bottom-width: 2px;\n}\n.border-gray-200{\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n.bg-white{\n  background-color: #f4faffff;\n}\n.bg-red-600{\n  --tw-bg-opacity: 1;\n  background-color: rgb(220 38 38 / var(--tw-bg-opacity));\n}\n.bg-gray-900{\n  --tw-bg-opacity: 1;\n  background-color: rgb(17 24 39 / var(--tw-bg-opacity));\n}\n.bg-bleuTherne{\n  --tw-bg-opacity: 1;\n  background-color: rgb(31 41 55 / var(--tw-bg-opacity));\n}\n.bg-jean\\/10{\n  background-color: rgb(0 170 255 / 0.1);\n}\n.bg-jean{\n  background-color: #00AAFFff;\n}\n.bg-slate-400{\n  --tw-bg-opacity: 1;\n  background-color: rgb(148 163 184 / var(--tw-bg-opacity));\n}\n.bg-red-200{\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 202 202 / var(--tw-bg-opacity));\n}\n.bg-red-100{\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 226 226 / var(--tw-bg-opacity));\n}\n.fill-white{\n  fill: #f4faffff;\n}\n.fill-gray-600{\n  fill: #4b5563;\n}\n.fill-slate-900{\n  fill: #0f172a;\n}\n.stroke-jean{\n  stroke: #00AAFFff;\n}\n.stroke-slate-600{\n  stroke: #475569;\n}\n.stroke-dark{\n  stroke: #020203ff;\n}\n.object-cover{\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.p-2{\n  padding: 0.5rem;\n}\n.p-4{\n  padding: 1rem;\n}\n.p-8{\n  padding: 2rem;\n}\n.px-4{\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-2{\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.px-1{\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.py-8{\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n.px-2{\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.py-1{\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.px-3{\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.px-8{\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.py-4{\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.pb-2{\n  padding-bottom: 0.5rem;\n}\n.text-center{\n  text-align: center;\n}\n.text-5xl{\n  font-size: 3rem;\n  line-height: 1;\n}\n.text-sm{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-\\[0\\.625rem\\]{\n  font-size: 0.625rem;\n}\n.text-lg{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-xl{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.text-3xl{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n.text-2xl{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-extrabold{\n  font-weight: 800;\n}\n.font-bold{\n  font-weight: 700;\n}\n.font-medium{\n  font-weight: 500;\n}\n.font-semibold{\n  font-weight: 600;\n}\n.font-black{\n  font-weight: 900;\n}\n.uppercase{\n  text-transform: uppercase;\n}\n.capitalize{\n  text-transform: capitalize;\n}\n.leading-4{\n  line-height: 1rem;\n}\n.tracking-wide{\n  letter-spacing: 0.025em;\n}\n.tracking-wider{\n  letter-spacing: 0.05em;\n}\n.text-dark{\n  color: #020203ff;\n}\n.text-gray-500{\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n.text-jean{\n  color: #00AAFFff;\n}\n.text-slate-500{\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n.text-white{\n  color: #f4faffff;\n}\n.text-gray-400{\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.text-gray-600{\n  --tw-text-opacity: 1;\n  color: rgb(75 85 99 / var(--tw-text-opacity));\n}\n.text-gray-900{\n  --tw-text-opacity: 1;\n  color: rgb(17 24 39 / var(--tw-text-opacity));\n}\n.text-red-900{\n  --tw-text-opacity: 1;\n  color: rgb(127 29 29 / var(--tw-text-opacity));\n}\n.text-red-600{\n  --tw-text-opacity: 1;\n  color: rgb(220 38 38 / var(--tw-text-opacity));\n}\n.opacity-0{\n  opacity: 0;\n}\n.shadow-sm{\n  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-lg{\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-red-600\\/30{\n  --tw-shadow-color: rgb(220 38 38 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-jean\\/30{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-red-200\\/30{\n  --tw-shadow-color: rgb(254 202 202 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-red-100\\/30{\n  --tw-shadow-color: rgb(254 226 226 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.outline{\n  outline-style: solid;\n}\n.ring-1{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-black{\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));\n}\n.ring-opacity-5{\n  --tw-ring-opacity: 0.05;\n}\n.contrast-100{\n  --tw-contrast: contrast(1);\n  filter: var(--tw-filter);\n}\n.drop-shadow-md{\n  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));\n  filter: var(--tw-filter);\n}\n.filter{\n  filter: var(--tw-filter);\n}\n.transition-all{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-200{\n  transition-duration: 200ms;\n}\n.duration-100{\n  transition-duration: 100ms;\n}\n.duration-300{\n  transition-duration: 300ms;\n}\n.ease-in-out{\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.\\[clip-path\\:cicle\\(70\\%_at_20\\%_30\\%\\)\\]{\n  -webkit-clip-path: cicle(70% at 20% 30%);\n          clip-path: cicle(70% at 20% 30%);\n}\nbody {\n  font-family: \"Raleway\", sans-serif;\n}\n.hover\\:scale-95:hover{\n  --tw-scale-x: .95;\n  --tw-scale-y: .95;\n  transform: var(--tw-transform);\n}\n.hover\\:border-transparent:hover{\n  border-color: transparent;\n}\n.hover\\:bg-jean:hover{\n  background-color: #00AAFFff;\n}\n.hover\\:fill-dark:hover{\n  fill: #020203ff;\n}\n.hover\\:text-dark:hover{\n  color: #020203ff;\n}\n.hover\\:text-jean:hover{\n  color: #00AAFFff;\n}\n.hover\\:text-white:hover{\n  color: #f4faffff;\n}\n.hover\\:shadow-jean\\/30:hover{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.hover\\:ring-1:hover{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.hover\\:ring-red-600:hover{\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(220 38 38 / var(--tw-ring-opacity));\n}\n.hover\\:ring-dark:hover{\n  --tw-ring-color: #020203ff;\n}\n.group:hover .group-hover\\:h-full{\n  height: 100%;\n}\n.group:hover .group-hover\\:-translate-y-0{\n  --tw-translate-y: -0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:translate-y-0{\n  --tw-translate-y: 0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:scale-100{\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:opacity-100{\n  opacity: 1;\n}\n@media (min-width: 640px){\n  .sm\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .sm\\:gap-y-8{\n    row-gap: 2rem;\n  }\n  .sm\\:px-8{\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width: 768px){\n  .md\\:col-span-1{\n    grid-column: span 1 / span 1;\n  }\n  .md\\:row-span-full{\n    grid-row: 1 / -1;\n  }\n  .md\\:mr-auto{\n    margin-right: auto;\n  }\n  .md\\:mt-16{\n    margin-top: 4rem;\n  }\n  .md\\:block{\n    display: block;\n  }\n  .md\\:inline-block{\n    display: inline-block;\n  }\n  .md\\:flex{\n    display: flex;\n  }\n  .md\\:w-full{\n    width: 100%;\n  }\n  .md\\:w-2\\/5{\n    width: 40%;\n  }\n  .md\\:w-3\\/5{\n    width: 60%;\n  }\n  .md\\:grid-cols-3{\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .md\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .md\\:flex-row{\n    flex-direction: row;\n  }\n  .md\\:justify-between{\n    justify-content: space-between;\n  }\n  .md\\:space-x-8 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(2rem * var(--tw-space-x-reverse));\n    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(1rem * var(--tw-space-x-reverse));\n    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:space-y-0 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-y-reverse: 0;\n    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));\n    margin-bottom: calc(0px * var(--tw-space-y-reverse));\n  }\n  .md\\:p-0{\n    padding: 0px;\n  }\n  .md\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .md\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n  .md\\:px-16{\n    padding-left: 4rem;\n    padding-right: 4rem;\n  }\n}\n@media (min-width: 1024px){\n  .lg\\:mx-auto{\n    margin-left: auto;\n    margin-right: auto;\n  }\n  .lg\\:inline-block{\n    display: inline-block;\n  }\n  .lg\\:w-10\\/12{\n    width: 83.333333%;\n  }\n  .lg\\:grid-cols-4{\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .lg\\:gap-x-8{\n    -moz-column-gap: 2rem;\n         column-gap: 2rem;\n  }\n  .lg\\:space-x-2 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:space-x-32 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(8rem * var(--tw-space-x-reverse));\n    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n  .lg\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .lg\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n@media (min-width: 1280px){\n  .xl\\:w-8\\/12{\n    width: 66.666667%;\n  }\n  .xl\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n}";
+__vite_ssr_exports__.default = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");\n/*\n! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com\n*/\n/*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n::before,\n::after {\n  --tw-content: '';\n}\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\nabbr[title] {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n/*\nRemove the default font size and weight for headings.\n*/\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n/*\nAdd the correct font weight in Edge and Safari.\n*/\nb,\nstrong {\n  font-weight: bolder;\n}\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n/*\nAdd the correct font size in all browsers.\n*/\nsmall {\n  font-size: 80%;\n}\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsub {\n  bottom: -0.25em;\n}\nsup {\n  top: -0.5em;\n}\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\nbutton,\nselect {\n  text-transform: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n:-moz-focusring {\n  outline: auto;\n}\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\nprogress {\n  vertical-align: baseline;\n}\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n/*\nAdd the correct display in Chrome and Safari.\n*/\nsummary {\n  display: list-item;\n}\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n  padding: 0;\n}\nlegend {\n  padding: 0;\n}\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n/*\nPrevent resizing textareas horizontally by default.\n*/\ntextarea {\n  resize: vertical;\n}\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n/*\nSet the default cursor for buttons.\n*/\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n[hidden] {\n  display: none;\n}\n*, ::before, ::after{\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur: var(--tw-empty,/*!*/ /*!*/);\n  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);\n  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);\n  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);\n  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-invert: var(--tw-empty,/*!*/ /*!*/);\n  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);\n  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);\n  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.aspect-h-1{\n  --tw-aspect-h: 1;\n}\n.aspect-w-2{\n  position: relative;\n  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);\n  --tw-aspect-w: 2;\n}\n.aspect-w-2 > *{\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n.absolute{\n  position: absolute;\n}\n.relative{\n  position: relative;\n}\n.sticky{\n  position: -webkit-sticky;\n  position: sticky;\n}\n.inset-x-0{\n  left: 0px;\n  right: 0px;\n}\n.top-0{\n  top: 0px;\n}\n.bottom-full{\n  bottom: 100%;\n}\n.top-full{\n  top: 100%;\n}\n.left-1\\/2{\n  left: 50%;\n}\n.z-50{\n  z-index: 50;\n}\n.col-span-3{\n  grid-column: span 3 / span 3;\n}\n.my-4{\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\n.my-16{\n  margin-top: 4rem;\n  margin-bottom: 4rem;\n}\n.my-8{\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.mt-4{\n  margin-top: 1rem;\n}\n.mb-2\\.5{\n  margin-bottom: 0.625rem;\n}\n.mb-2{\n  margin-bottom: 0.5rem;\n}\n.-mt-px{\n  margin-top: -1px;\n}\n.-ml-2{\n  margin-left: -0.5rem;\n}\n.mt-2{\n  margin-top: 0.5rem;\n}\n.ml-4{\n  margin-left: 1rem;\n}\n.mt-16{\n  margin-top: 4rem;\n}\n.block{\n  display: block;\n}\n.inline-block{\n  display: inline-block;\n}\n.flex{\n  display: flex;\n}\n.grid{\n  display: grid;\n}\n.hidden{\n  display: none;\n}\n.h-5{\n  height: 1.25rem;\n}\n.h-6{\n  height: 1.5rem;\n}\n.h-\\[50vh\\]{\n  height: 50vh;\n}\n.h-full{\n  height: 100%;\n}\n.h-60{\n  height: 15rem;\n}\n.h-10{\n  height: 2.5rem;\n}\n.w-screen{\n  width: 100vw;\n}\n.w-full{\n  width: 100%;\n}\n.w-5{\n  width: 1.25rem;\n}\n.w-6{\n  width: 1.5rem;\n}\n.w-2\\/3{\n  width: 66.666667%;\n}\n.w-72{\n  width: 18rem;\n}\n.w-10{\n  width: 2.5rem;\n}\n.w-3\\/5{\n  width: 60%;\n}\n.-translate-y-full{\n  --tw-translate-y: -100%;\n  transform: var(--tw-transform);\n}\n.translate-y-full{\n  --tw-translate-y: 100%;\n  transform: var(--tw-transform);\n}\n.-rotate-\\[8deg\\]{\n  --tw-rotate: -8deg;\n  transform: var(--tw-transform);\n}\n.scale-0{\n  --tw-scale-x: 0;\n  --tw-scale-y: 0;\n  transform: var(--tw-transform);\n}\n.cursor-pointer{\n  cursor: pointer;\n}\n.grid-flow-row{\n  grid-auto-flow: row;\n}\n.grid-cols-3{\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n}\n.grid-cols-1{\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-rows-1{\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n}\n.flex-col{\n  flex-direction: column;\n}\n.flex-col-reverse{\n  flex-direction: column-reverse;\n}\n.flex-wrap{\n  flex-wrap: wrap;\n}\n.items-start{\n  align-items: flex-start;\n}\n.items-end{\n  align-items: flex-end;\n}\n.items-center{\n  align-items: center;\n}\n.justify-start{\n  justify-content: flex-start;\n}\n.justify-end{\n  justify-content: flex-end;\n}\n.justify-center{\n  justify-content: center;\n}\n.justify-between{\n  justify-content: space-between;\n}\n.justify-around{\n  justify-content: space-around;\n}\n.justify-evenly{\n  justify-content: space-evenly;\n}\n.gap-6{\n  gap: 1.5rem;\n}\n.gap-8{\n  gap: 2rem;\n}\n.gap-x-8{\n  -moz-column-gap: 2rem;\n       column-gap: 2rem;\n}\n.gap-y-6{\n  row-gap: 1.5rem;\n}\n.space-y-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\n.space-x-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.25rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(1rem * var(--tw-space-x-reverse));\n  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-y-16 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(4rem * var(--tw-space-y-reverse));\n}\n.space-y-6 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));\n}\n.space-y-8 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2rem * var(--tw-space-y-reverse));\n}\n.space-y-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1rem * var(--tw-space-y-reverse));\n}\n.space-y-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));\n}\n.overflow-hidden{\n  overflow: hidden;\n}\n.overflow-scroll{\n  overflow: scroll;\n}\n.overflow-x-hidden{\n  overflow-x: hidden;\n}\n.scroll-smooth{\n  scroll-behavior: smooth;\n}\n.rounded-lg{\n  border-radius: 0.5rem;\n}\n.rounded-md{\n  border-radius: 0.375rem;\n}\n.rounded-t-lg{\n  border-top-left-radius: 0.5rem;\n  border-top-right-radius: 0.5rem;\n}\n.border-2{\n  border-width: 2px;\n}\n.border{\n  border-width: 1px;\n}\n.border-t-2{\n  border-top-width: 2px;\n}\n.border-b-2{\n  border-bottom-width: 2px;\n}\n.border-gray-200{\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n.bg-white{\n  background-color: #f4faffff;\n}\n.bg-red-100{\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 226 226 / var(--tw-bg-opacity));\n}\n.bg-gray-900{\n  --tw-bg-opacity: 1;\n  background-color: rgb(17 24 39 / var(--tw-bg-opacity));\n}\n.bg-bleuTherne{\n  --tw-bg-opacity: 1;\n  background-color: rgb(31 41 55 / var(--tw-bg-opacity));\n}\n.bg-jean\\/10{\n  background-color: rgb(0 170 255 / 0.1);\n}\n.bg-jean{\n  background-color: #00AAFFff;\n}\n.bg-slate-400{\n  --tw-bg-opacity: 1;\n  background-color: rgb(148 163 184 / var(--tw-bg-opacity));\n}\n.fill-white{\n  fill: #f4faffff;\n}\n.fill-gray-600{\n  fill: #4b5563;\n}\n.fill-slate-900{\n  fill: #0f172a;\n}\n.stroke-jean{\n  stroke: #00AAFFff;\n}\n.stroke-slate-600{\n  stroke: #475569;\n}\n.stroke-dark{\n  stroke: #020203ff;\n}\n.object-cover{\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.p-2{\n  padding: 0.5rem;\n}\n.p-4{\n  padding: 1rem;\n}\n.p-8{\n  padding: 2rem;\n}\n.px-4{\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-2{\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.px-1{\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.py-8{\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n.px-2{\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.py-1{\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.px-3{\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.px-8{\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.py-4{\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.pb-2{\n  padding-bottom: 0.5rem;\n}\n.text-center{\n  text-align: center;\n}\n.text-5xl{\n  font-size: 3rem;\n  line-height: 1;\n}\n.text-sm{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-\\[0\\.625rem\\]{\n  font-size: 0.625rem;\n}\n.text-lg{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-xl{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.text-3xl{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n.text-2xl{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-extrabold{\n  font-weight: 800;\n}\n.font-bold{\n  font-weight: 700;\n}\n.font-medium{\n  font-weight: 500;\n}\n.font-semibold{\n  font-weight: 600;\n}\n.font-black{\n  font-weight: 900;\n}\n.uppercase{\n  text-transform: uppercase;\n}\n.capitalize{\n  text-transform: capitalize;\n}\n.leading-4{\n  line-height: 1rem;\n}\n.tracking-wide{\n  letter-spacing: 0.025em;\n}\n.tracking-wider{\n  letter-spacing: 0.05em;\n}\n.text-dark{\n  color: #020203ff;\n}\n.text-gray-500{\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n.text-jean{\n  color: #00AAFFff;\n}\n.text-slate-500{\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n.text-red-900{\n  --tw-text-opacity: 1;\n  color: rgb(127 29 29 / var(--tw-text-opacity));\n}\n.text-gray-400{\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.text-gray-600{\n  --tw-text-opacity: 1;\n  color: rgb(75 85 99 / var(--tw-text-opacity));\n}\n.text-white{\n  color: #f4faffff;\n}\n.text-gray-900{\n  --tw-text-opacity: 1;\n  color: rgb(17 24 39 / var(--tw-text-opacity));\n}\n.opacity-0{\n  opacity: 0;\n}\n.shadow-sm{\n  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-lg{\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-red-100\\/30{\n  --tw-shadow-color: rgb(254 226 226 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-jean\\/30{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.outline{\n  outline-style: solid;\n}\n.ring-1{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-black{\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));\n}\n.ring-opacity-5{\n  --tw-ring-opacity: 0.05;\n}\n.contrast-100{\n  --tw-contrast: contrast(1);\n  filter: var(--tw-filter);\n}\n.drop-shadow-md{\n  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));\n  filter: var(--tw-filter);\n}\n.filter{\n  filter: var(--tw-filter);\n}\n.transition-all{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-200{\n  transition-duration: 200ms;\n}\n.duration-100{\n  transition-duration: 100ms;\n}\n.duration-300{\n  transition-duration: 300ms;\n}\n.ease-in-out{\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.\\[clip-path\\:cicle\\(70\\%_at_20\\%_30\\%\\)\\]{\n  -webkit-clip-path: cicle(70% at 20% 30%);\n          clip-path: cicle(70% at 20% 30%);\n}\nbody {\n  font-family: \"Raleway\", sans-serif;\n}\n.hover\\:scale-95:hover{\n  --tw-scale-x: .95;\n  --tw-scale-y: .95;\n  transform: var(--tw-transform);\n}\n.hover\\:border-transparent:hover{\n  border-color: transparent;\n}\n.hover\\:bg-jean:hover{\n  background-color: #00AAFFff;\n}\n.hover\\:fill-dark:hover{\n  fill: #020203ff;\n}\n.hover\\:text-dark:hover{\n  color: #020203ff;\n}\n.hover\\:text-jean:hover{\n  color: #00AAFFff;\n}\n.hover\\:text-white:hover{\n  color: #f4faffff;\n}\n.hover\\:shadow-jean\\/30:hover{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.hover\\:ring-1:hover{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.hover\\:ring-dark:hover{\n  --tw-ring-color: #020203ff;\n}\n.hover\\:ring-red-600:hover{\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(220 38 38 / var(--tw-ring-opacity));\n}\n.group:hover .group-hover\\:h-full{\n  height: 100%;\n}\n.group:hover .group-hover\\:-translate-y-0{\n  --tw-translate-y: -0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:translate-y-0{\n  --tw-translate-y: 0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:scale-100{\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:opacity-100{\n  opacity: 1;\n}\n@media (min-width: 640px){\n  .sm\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .sm\\:gap-y-8{\n    row-gap: 2rem;\n  }\n  .sm\\:px-8{\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width: 768px){\n  .md\\:col-span-1{\n    grid-column: span 1 / span 1;\n  }\n  .md\\:row-span-full{\n    grid-row: 1 / -1;\n  }\n  .md\\:mr-auto{\n    margin-right: auto;\n  }\n  .md\\:mt-16{\n    margin-top: 4rem;\n  }\n  .md\\:block{\n    display: block;\n  }\n  .md\\:inline-block{\n    display: inline-block;\n  }\n  .md\\:flex{\n    display: flex;\n  }\n  .md\\:w-full{\n    width: 100%;\n  }\n  .md\\:w-2\\/5{\n    width: 40%;\n  }\n  .md\\:w-3\\/5{\n    width: 60%;\n  }\n  .md\\:grid-cols-3{\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .md\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .md\\:flex-row{\n    flex-direction: row;\n  }\n  .md\\:justify-between{\n    justify-content: space-between;\n  }\n  .md\\:space-x-8 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(2rem * var(--tw-space-x-reverse));\n    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(1rem * var(--tw-space-x-reverse));\n    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:space-y-0 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-y-reverse: 0;\n    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));\n    margin-bottom: calc(0px * var(--tw-space-y-reverse));\n  }\n  .md\\:p-0{\n    padding: 0px;\n  }\n  .md\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .md\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n  .md\\:px-16{\n    padding-left: 4rem;\n    padding-right: 4rem;\n  }\n}\n@media (min-width: 1024px){\n  .lg\\:mx-auto{\n    margin-left: auto;\n    margin-right: auto;\n  }\n  .lg\\:inline-block{\n    display: inline-block;\n  }\n  .lg\\:w-10\\/12{\n    width: 83.333333%;\n  }\n  .lg\\:grid-cols-4{\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .lg\\:gap-x-8{\n    -moz-column-gap: 2rem;\n         column-gap: 2rem;\n  }\n  .lg\\:space-x-2 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:space-x-32 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(8rem * var(--tw-space-x-reverse));\n    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n  .lg\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .lg\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n@media (min-width: 1280px){\n  .xl\\:w-8\\/12{\n    width: 66.666667%;\n  }\n  .xl\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n}";
 }
 
 
@@ -1882,12 +1883,13 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // - /components/example.vue ($id_b9253967)
 // - /components/get-started.vue ($id_645fb6af)
 // - /pages/index.vue ($id_cca58e97)
-// - /components/content.vue ($id_3032adb6)
-// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /components/Menu.vue ($id_b1d32007)
 // - /components/card.vue ($id_d9dfd282)
 // - /components/Section.vue ($id_5ff493dc)
 // - /components/contents-sections.vue ($id_0b3ec488)
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /components/content.vue ($id_3032adb6)
+// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
@@ -1914,12 +1916,13 @@ const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /components/example.vue ($id_b9253967)
 // - /components/get-started.vue ($id_645fb6af)
 // - /pages/index.vue ($id_cca58e97)
-// - /components/content.vue ($id_3032adb6)
-// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /components/Menu.vue ($id_b1d32007)
 // - /components/card.vue ($id_d9dfd282)
 // - /components/Section.vue ($id_5ff493dc)
 // - /components/contents-sections.vue ($id_0b3ec488)
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /components/content.vue ($id_3032adb6)
+// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
@@ -2231,7 +2234,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "overflow-x-hidden w-screen sticky top-0 bg-white z-50 sm:px-8 lg:px-0 xl:px-0 border border-b-2 border-gray-200" }, _attrs))}><div class="overflow-hidden w-full lg:w-10/12 xl:w-8/12 lg:mx-auto flex justify-between items-center"><div class="flex justify-between items-center space-x-4 md:space-x-8 lg:space-x-32"><a class="tracking-wide p-2 text-3xl font-extrabold text-jean hover:text-jean cursor-pointer transition-all duration-100" href="/">Helpers</a><nav class="space-x-1 lg:space-x-2"><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="/templates">Templates</a><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="#">Functionalities</a><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="#">Plugins</a></nav></div><nav class="space-x-1 lg:space-x-2"><a class="text-gray-500 hover:text-dark transition-all duration-200 p-2" href="#">Register</a><a class="text-gray-500 transition-all duration-200 border border-1 px-4 py-2 rounded-lg font-semibold hover:bg-jean hover:text-white" href="#">Login</a></nav></div></div>`)
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "overflow-x-hidden w-screen sticky top-0 bg-white z-50 sm:px-8 lg:px-0 xl:px-0 border border-b-2 border-gray-200" }, _attrs))}><div class="overflow-hidden w-full lg:w-10/12 xl:w-8/12 lg:mx-auto flex justify-between items-center"><div class="flex justify-between items-center space-x-4 md:space-x-8 lg:space-x-32"><a class="tracking-wide p-2 text-3xl font-extrabold text-jean hover:text-jean cursor-pointer transition-all duration-100" href="/">Helpers</a><nav class="space-x-1 lg:space-x-2"><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="/templates">Templates</a><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="#">Functionalities</a><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="/plugins">Plugins</a></nav></div><nav class="space-x-1 lg:space-x-2"><a class="text-gray-500 hover:text-dark transition-all duration-200 p-2" href="#">Register</a><a class="text-gray-500 transition-all duration-200 border border-1 px-4 py-2 rounded-lg font-semibold hover:bg-jean hover:text-white" href="#">Login</a></nav></div></div>`)
 }
 
 
@@ -2529,6 +2532,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
 // - /pages/index.vue ($id_cca58e97)
+// - /pages/plugins/index.vue ($id_b9b13c0b)
 // - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
 // --------------------
@@ -2540,6 +2544,13 @@ __vite_ssr_exports__.default = [
     "file": "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/index.vue",
     "children": [],
     "component": () => __vite_ssr_dynamic_import__('/pages/index.vue')
+  },
+  {
+    "name": "plugins",
+    "path": "/plugins",
+    "file": "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/plugins/index.vue",
+    "children": [],
+    "component": () => __vite_ssr_dynamic_import__('/pages/plugins/index.vue')
   },
   {
     "name": "templates-group-section-id",
@@ -2955,6 +2966,711 @@ _sfc_main.setup = (props, ctx) => {
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
 __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/get-started.vue"]]);
+}
+
+
+// --------------------
+// Request: /pages/plugins/index.vue
+// Parents: 
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/routes.mjs ($id_2bd3b053)
+// Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/index.mjs ($id_ea12a3fb)
+// - /components/Menu.vue ($id_b1d32007)
+// - /components/contents-sections.vue ($id_0b3ec488)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_b9b13c0b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/Menu.vue");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-sections.vue");
+
+
+    const _sfc_main = {
+         setup () {
+            __vite_ssr_import_0__.useMeta({
+                htmlAttrs: {
+                    class: 'scroll-smooth'
+                }
+            })
+        },
+        data: () =>({
+            categories:[
+                {
+                    title: 'Marketing',
+                    description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
+                    subCategories:[
+                        {
+                            title:'pages content',
+                            items:[
+                                {
+                                    id:1,
+                                    image:'assets/images/bureau.png',
+                                    title:'hero sections',
+                                    items:[
+                                        {
+                                            id: 1,
+                                            title:"classic hero",
+                                            content: `
+                                                    <template>
+                                                    <div class="w-full  h-[50vh]">
+                                                        <div class="w-full h-full flex justify-around items-center">
+                                                            <div class="w-full p-2 md:p-0 md:2/5  flex justify-center items-center text-center flex-col space-y-6 ">
+                                                                <h1 class="text-dark text-5xl tracking-wide font-black">
+                                                                    Code quickly and reliably with <span class="text-jean">Helpers</span>.
+                                                                </h1>
+                                                                <p class="text-lg text-gray-500">
+                                                                    Create a project and help you with our various tools and templates.
+                                                                </p>
+                                                                <a href="#"
+                                                                    class="border-2 border-gray-200 w-2/3 block cursor-pointer   px-8 py-4 text-dark rounded-lg font-semibold tracking-wider shadow-sm hover:border-transparent hover:text-white hover:bg-jean hover:shadow-jean/30  transition-all duration-300">
+                                                                    See our latest creation
+                                                                </a>
+
+                                                                <a href="#"
+                                                                    class="bg-jean w-2/3 block cursor-pointer  px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95  transition-all duration-300 ">
+                                                                    Get started
+                                                                </a>
+                                                            </div>
+                                                            <div class="hidden md:flex w-3/5  justify-center items-center flex-col space-y-6 bg-slate-400">
+                                                                <img src="@/assets/images/header-bg.jpg" alt="header-bg.jpg" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </template>
+                                            `
+                                        },
+                                    ]
+                                },
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:3,
+                                    image:'assets/images/ajust.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                                {
+                                    id:4,
+                                    image:'assets/images/header-1.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        },
+                        {
+                            title:'Feedback',
+                            items:[
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                
+                            ]
+                        },
+                        {
+                            title:'Elements',
+                            items:[
+                                {
+                                    id:4,
+                                    image:'assets/images/header-1.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        },
+                        {
+                            title:'pages Exemples',
+                            items:[
+                                {
+                                    id:1,
+                                    image:'assets/images/bureau.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:3,
+                                    image:'assets/images/ajust.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                                {
+                                    id:4,
+                                    image:'assets/images/header-1.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: 'Application',
+                    description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
+                    subCategories:[
+                        {
+                            title:'Feedback',
+                            items:[
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                
+                            ]
+                        },
+                        {
+                            title:'pages Exemples',
+                            items:[
+                                {
+                                    id:1,
+                                    image:'assets/images/bureau.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        },
+                        {
+                            title:'Elements',
+                            items:[
+                                {
+                                    id:4,
+                                    image:'assets/images/header-1.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    title: 'Ecommerce',
+                    description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
+                    subCategories:[
+                        {
+                            title:'pages content',
+                            items:[
+                                {
+                                    id:1,
+                                    image:'assets/images/bureau.png',
+                                    title:'hero section',
+                                    items:[
+                                        {
+                                            id: 1,
+                                            title:"classic hero",
+                                            content: `
+                                                    <template>
+                                                    <div class="w-full  h-[50vh]">
+                                                        <div class="w-full h-full flex justify-around items-center">
+                                                            <div class="w-full p-2 md:p-0 md:2/5  flex justify-center items-center text-center flex-col space-y-6 ">
+                                                                <h1 class="text-dark text-5xl tracking-wide font-black">
+                                                                    Code quickly and reliably with <span class="text-jean">Helpers</span>.
+                                                                </h1>
+                                                                <p class="text-lg text-gray-500">
+                                                                    Create a project and help you with our various tools and templates.
+                                                                </p>
+                                                                <a href="#"
+                                                                    class="border-2 border-gray-200 w-2/3 block cursor-pointer   px-8 py-4 text-dark rounded-lg font-semibold tracking-wider shadow-sm hover:border-transparent hover:text-white hover:bg-jean hover:shadow-jean/30  transition-all duration-300">
+                                                                    See our latest creation
+                                                                </a>
+
+                                                                <a href="#"
+                                                                    class="bg-jean w-2/3 block cursor-pointer  px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95  transition-all duration-300 ">
+                                                                    Get started
+                                                                </a>
+                                                            </div>
+                                                            <div class="hidden md:flex w-3/5  justify-center items-center flex-col space-y-6 bg-slate-400">
+                                                                <img src="@/assets/images/header-bg.jpg" alt="header-bg.jpg" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </template>
+                                            `
+                                        },
+                                    ]
+                                },
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:3,
+                                    image:'assets/images/ajust.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                                {
+                                    id:4,
+                                    image:'assets/images/header-1.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        },
+                        {
+                            title:'Feedback',
+                            items:[
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                
+                            ]
+                        },
+                        {
+                            title:'Elements',
+                            items:[
+                                {
+                                    id:4,
+                                    image:'assets/images/header-1.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        },
+                        {
+                            title:'pages Exemples',
+                            items:[
+                                {
+                                    id:1,
+                                    image:'assets/images/bureau.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:2,
+                                    image:'assets/images/bureau1.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:3,
+                                    image:'assets/images/ajust.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                                {
+                                    id:4,
+                                    image:'assets/images/header-1.png',
+                                    title:'hero section',
+                                    items:[]
+                                },
+                                {
+                                    id:5,
+                                    image:'assets/images/header-2.png',
+                                    title:'features section',
+                                    items:[]
+                                },
+                                {
+                                    id:6,
+                                    image:'assets/images/rename.png',
+                                    title:'CTA section',
+                                    items:[]
+                                },
+                            ]
+                        }
+                    ]
+                },
+            ]
+        })
+    }
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Menu = __vite_ssr_import_1__.default
+  const _component_contents_sections = __vite_ssr_import_2__.default
+
+  _push(`<div${__vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({ class: "w-full" }, _attrs))}>`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_Menu, null, null, _parent))
+  _push(`<!--[-->`)
+  __vite_ssr_import_4__.ssrRenderList(_ctx.categories, (contentSection) => {
+    _push(__vite_ssr_import_4__.ssrRenderComponent(_component_contents_sections, {
+      key: contentSection.title,
+      contentSection: contentSection
+    }, null, _parent))
+  })
+  _push(`<!--]--></div>`)
+}
+
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/plugins/index.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/plugins/index.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt3/dist/meta/runtime/index.mjs
+// Parents: 
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /pages/templates/index.vue ($id_83001a7f)
+// Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
+// --------------------
+const $id_ea12a3fb = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/composables.mjs");
+__vite_ssr_exportAll__(__vite_ssr_import_0__);
+;
+}
+
+
+// --------------------
+// Request: /components/Menu.vue
+// Parents: 
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /pages/templates/index.vue ($id_83001a7f)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_b1d32007 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "overflow-hidden w-full sticky top-0 bg-white z-50 flex justify-between items-center md:w-full md:mr-auto my-4 border-b-2 border-gray-200 p-2" }, _attrs))}><div class="flex justify-start items-center space-x-1 md:space-x-4"><h1 class="hidden p-2 lg:py-2 lg:px-4 md:inline-block font-bold tracking-wide text-dark">Templates &gt;</h1><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Marketing">Marketing</a><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Application">Application</a><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Ecommerce">Ecommerce</a></div><div class="flex justify-end items-center space-x-2 md:space-x-4"><h1 class="hidden py-2 px-4 lg:inline-block font-bold tracking-wide text-dark">Options &gt;</h1><button class="cursor-pointer text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-gray-500 shadow-sm border-gray-200 border-2 hover:ring-1 hover:ring-dark hover:scale-95 transition-all duration-200">Add section</button><button class="cursor-pointer text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-red-900 hover:ring-1 hover:ring-red-600 hover:scale-95 bg-red-100 shadow-lg shadow-red-100/30 transition-all duration-200">Remove section</button></div></div>`)
+}
+
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Menu.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Menu.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/contents-sections.vue
+// Parents: 
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /pages/templates/index.vue ($id_83001a7f)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /components/Section.vue ($id_5ff493dc)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_0b3ec488 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/Section.vue");
+
+
+const _sfc_main = {
+    props:{
+        contentSection:{
+            type:Object,
+            required:true,
+        },
+    }
+}
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Section = __vite_ssr_import_0__.default
+
+  _push(`<div${
+    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
+      id: $props.contentSection.title.replace(' ',''),
+      class: "w-full my-16 p-4"
+    }, _attrs))
+  }><div class="border-b-2 border-gray-200"><h1 class="text-xl font-bold text-dark capitalize">${
+    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.title)
+  }</h1><p class="text-gray-400 text-sm mt-2">${
+    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.description)
+  }</p></div><!--[-->`)
+  __vite_ssr_import_2__.ssrRenderList($props.contentSection.subCategories, (section) => {
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Section, {
+      key: section.title,
+      section: section
+    }, null, _parent))
+  })
+  _push(`<!--]--></div>`)
+}
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/contents-sections.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/contents-sections.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/Section.vue
+// Parents: 
+// - /components/contents-sections.vue ($id_0b3ec488)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /components/card.vue ($id_d9dfd282)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_5ff493dc = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/card.vue");
+
+
+const _sfc_main = {
+    props:{
+        section:{
+            type:Object,
+            required:true
+        }
+    }
+}
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_card = __vite_ssr_import_0__.default
+
+  _push(`<div${
+    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
+      id: $props.section.title.replace(' ',''),
+      class: "my-4 grid gap-x-8 gap-y-6 grid-cols-3 lg:grid-cols-4 py-8 border-b-2 border-gray-200"
+    }, _attrs))
+  }><h1 class="col-span-3 md:col-span-1 md:row-span-full text-md font-bold text-dark">${
+    __vite_ssr_import_2__.ssrInterpolate($props.section.title)
+  }</h1><div class="col-span-3 grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-y-8 lg:gap-x-8"><!--[-->`)
+  __vite_ssr_import_2__.ssrRenderList($props.section.items, (card) => {
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_card, {
+      key: card.id,
+      card: card,
+      section: $props.section
+    }, null, _parent))
+  })
+  _push(`<!--]--></div></div>`)
+}
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Section.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Section.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/card.vue
+// Parents: 
+// - /components/Section.vue ($id_5ff493dc)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_d9dfd282 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+
+const _sfc_main = {
+    props:{
+        card:{
+            type:Object,
+            required:true
+        },
+        section:{
+            type:Object,
+            required:true
+        }
+    }
+}
+
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<a${
+    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
+      class: "group rounded-lg ring-1 ring-black ring-opacity-5",
+      href: '/templates/'+$props.section.title+'/'+$props.section.title+'-'+$props.card.title
+    }, _attrs))
+  }><div class="aspect-h-1 aspect-w-2 rounded-lg"><img class="object-cover rounded-t-lg contrast-100"${
+    __vite_ssr_import_1__.ssrRenderAttr("src", $props.card.image)
+  }${
+    __vite_ssr_import_1__.ssrRenderAttr("alt", $props.card.image)
+  }></div><div class="flex justify-center flex-col items-start p-2"><h2 class="text-dark tracking-wide font-bold text-sm capitalize">${
+    __vite_ssr_import_1__.ssrInterpolate($props.card.title)
+  }</h2><p class="text-gray-400 text-sm"><span class="text-dark tracking-wide font-bold">${
+    __vite_ssr_import_1__.ssrInterpolate($props.card.items.length)
+  }</span>`)
+  if ($props.card.items.length >1) {
+    _push(`<span> elements.</span>`)
+  } else {
+    _push(`<span> element.</span>`)
+  }
+  _push(`</p></div></a>`)
+}
+
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/card.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/card.vue"]]);
 }
 
 
@@ -4249,257 +4965,6 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 
 
 // --------------------
-// Request: /node_modules/nuxt3/dist/meta/runtime/index.mjs
-// Parents: 
-// - /pages/templates/index.vue ($id_83001a7f)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
-// --------------------
-const $id_ea12a3fb = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/composables.mjs");
-__vite_ssr_exportAll__(__vite_ssr_import_0__);
-;
-}
-
-
-// --------------------
-// Request: /components/Menu.vue
-// Parents: 
-// - /pages/templates/index.vue ($id_83001a7f)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_b1d32007 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "overflow-hidden w-full sticky top-0 bg-white z-50 flex justify-between items-center md:w-full md:mr-auto my-4 border-b-2 border-gray-200 p-2" }, _attrs))}><div class="flex justify-start items-center space-x-1 md:space-x-4"><h1 class="hidden p-2 lg:py-2 lg:px-4 md:inline-block font-bold tracking-wide text-dark">Templates &gt;</h1><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Marketing">Marketing</a><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Application">Application</a><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Ecommerce">Ecommerce</a></div><div class="flex justify-end items-center space-x-2 md:space-x-4"><h1 class="hidden py-2 px-4 lg:inline-block font-bold tracking-wide text-dark">Options &gt;</h1><button class="cursor-pointer text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-gray-500 shadow-sm border-gray-200 border-2 hover:ring-1 hover:ring-dark hover:scale-95 transition-all duration-200">Add section</button><button class="cursor-pointer text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-red-900 hover:ring-1 hover:ring-red-600 hover:scale-95 bg-red-100 shadow-lg shadow-red-100/30 transition-all duration-200">Remove section</button></div></div>`)
-}
-
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Menu.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Menu.vue"]]);
-}
-
-
-// --------------------
-// Request: /components/contents-sections.vue
-// Parents: 
-// - /pages/templates/index.vue ($id_83001a7f)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /components/Section.vue ($id_5ff493dc)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_0b3ec488 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/Section.vue");
-
-
-const _sfc_main = {
-    props:{
-        contentSection:{
-            type:Object,
-            required:true,
-        },
-    }
-}
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Section = __vite_ssr_import_0__.default
-
-  _push(`<div${
-    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
-      id: $props.contentSection.title.replace(' ',''),
-      class: "w-full my-16 p-4"
-    }, _attrs))
-  }><div class="border-b-2 border-gray-200"><h1 class="text-xl font-bold text-dark capitalize">${
-    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.title)
-  }</h1><p class="text-gray-400 text-sm mt-2">${
-    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.description)
-  }</p></div><!--[-->`)
-  __vite_ssr_import_2__.ssrRenderList($props.contentSection.subCategories, (section) => {
-    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Section, {
-      key: section.title,
-      section: section
-    }, null, _parent))
-  })
-  _push(`<!--]--></div>`)
-}
-
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/contents-sections.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/contents-sections.vue"]]);
-}
-
-
-// --------------------
-// Request: /components/Section.vue
-// Parents: 
-// - /components/contents-sections.vue ($id_0b3ec488)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /components/card.vue ($id_d9dfd282)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_5ff493dc = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/card.vue");
-
-
-const _sfc_main = {
-    props:{
-        section:{
-            type:Object,
-            required:true
-        }
-    }
-}
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_card = __vite_ssr_import_0__.default
-
-  _push(`<div${
-    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
-      id: $props.section.title.replace(' ',''),
-      class: "my-4 grid gap-x-8 gap-y-6 grid-cols-3 lg:grid-cols-4 py-8 border-b-2 border-gray-200"
-    }, _attrs))
-  }><h1 class="col-span-3 md:col-span-1 md:row-span-full text-md font-bold text-dark">${
-    __vite_ssr_import_2__.ssrInterpolate($props.section.title)
-  }</h1><div class="col-span-3 grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-y-8 lg:gap-x-8"><!--[-->`)
-  __vite_ssr_import_2__.ssrRenderList($props.section.items, (card) => {
-    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_card, {
-      key: card.id,
-      card: card,
-      section: $props.section
-    }, null, _parent))
-  })
-  _push(`<!--]--></div></div>`)
-}
-
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Section.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Section.vue"]]);
-}
-
-
-// --------------------
-// Request: /components/card.vue
-// Parents: 
-// - /components/Section.vue ($id_5ff493dc)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_d9dfd282 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-
-const _sfc_main = {
-    props:{
-        card:{
-            type:Object,
-            required:true
-        },
-        section:{
-            type:Object,
-            required:true
-        }
-    }
-}
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<a${
-    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-      class: "group rounded-lg ring-1 ring-black ring-opacity-5",
-      href: '/templates/'+$props.section.title+'/'+$props.section.title+'-'+$props.card.title
-    }, _attrs))
-  }><div class="aspect-h-1 aspect-w-2 rounded-lg"><img class="object-cover rounded-t-lg contrast-100"${
-    __vite_ssr_import_1__.ssrRenderAttr("src", $props.card.image)
-  }${
-    __vite_ssr_import_1__.ssrRenderAttr("alt", $props.card.image)
-  }></div><div class="flex justify-center flex-col items-start p-2"><h2 class="text-dark tracking-wide font-bold text-sm capitalize">${
-    __vite_ssr_import_1__.ssrInterpolate($props.card.title)
-  }</h2><p class="text-gray-400 text-sm"><span class="text-dark tracking-wide font-bold">${
-    __vite_ssr_import_1__.ssrInterpolate($props.card.items.length)
-  }</span>`)
-  if ($props.card.items.length >1) {
-    _push(`<span> elements.</span>`)
-  } else {
-    _push(`<span> element.</span>`)
-  }
-  _push(`</p></div></a>`)
-}
-
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/card.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/card.vue"]]);
-}
-
-
-// --------------------
 // Request: /node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs
 // Parents: 
 // - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/plugins/server.mjs ($id_96abf442)
@@ -4764,6 +5229,12 @@ const __modules__ = {
  '/assets/images/ajust.png': $id_0362fbec,
  '/assets/images/rename.png': $id_2ddbc618,
  '/components/get-started.vue': $id_645fb6af,
+ '/pages/plugins/index.vue': $id_b9b13c0b,
+ '/node_modules/nuxt3/dist/meta/runtime/index.mjs': $id_ea12a3fb,
+ '/components/Menu.vue': $id_b1d32007,
+ '/components/contents-sections.vue': $id_0b3ec488,
+ '/components/Section.vue': $id_5ff493dc,
+ '/components/card.vue': $id_d9dfd282,
  '/pages/templates/[group]/[section]-[id].vue': $id_42acd7e4,
  '/components/content.vue': $id_3032adb6,
  '/node_modules/vue-prism-editor/dist/prismeditor.esm.js': $id_e506e72f,
@@ -4774,11 +5245,6 @@ const __modules__ = {
  '/assets/css/prism-editor.css': $id_6c6c3065,
  '/components/content.vue?vue&type=style&index=0&scoped=true&lang.css': $id_8fdbd1fd,
  '/pages/templates/index.vue': $id_83001a7f,
- '/node_modules/nuxt3/dist/meta/runtime/index.mjs': $id_ea12a3fb,
- '/components/Menu.vue': $id_b1d32007,
- '/components/contents-sections.vue': $id_0b3ec488,
- '/components/Section.vue': $id_5ff493dc,
- '/components/card.vue': $id_d9dfd282,
  '/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs': $id_7b587af2,
  '/node_modules/ohmyfetch/dist/index.mjs': $id_780217c4,
  '/@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs': $id_71de6cd0,

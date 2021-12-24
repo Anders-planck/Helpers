@@ -130,7 +130,7 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/dist" + "/" + "1640314244";
+const STATIC_ASSETS_BASE = "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/dist" + "/" + "1640344810";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/dist/server/client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/dist/server/server.mjs'));
