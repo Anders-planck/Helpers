@@ -1,6 +1,6 @@
 <template>
     <div class="w-full">
-        <Menu/>
+        <Menu :items="categories"/>
         <contents-sections v-for="contentSection in categories" :key="contentSection.title" :contentSection="contentSection"/>
     </div>
 </template>
@@ -19,15 +19,15 @@
                 {
                     title: 'Marketing',
                     description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
+                    sub_categories:[
                         {
                             title:'pages content',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero sections',
-                                    items:[
+                                    cards:[
                                         {
                                             id: 1,
                                             title:"classic hero",
@@ -66,107 +66,107 @@
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'Feedback',
-                            items:[
+                            blocks:[
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                             ]
                         },
                         {
                             title:'Elements',
-                            items:[
+                            blocks:[
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'pages Exemples',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         }
@@ -175,69 +175,69 @@
                 {
                     title: 'Application',
                     description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
+                    sub_categories:[
                         {
                             title:'Feedback',
-                            items:[
+                            blocks:[
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                             ]
                         },
                         {
                             title:'pages Exemples',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'Elements',
-                            items:[
+                            blocks:[
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    card:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    card:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    card:[]
                                 },
                             ]
                         },
@@ -246,15 +246,15 @@
                 {
                     title: 'Ecommerce',
                     description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
+                    sub_categories:[
                         {
                             title:'pages content',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[
+                                    cards:[
                                         {
                                             id: 1,
                                             title:"classic hero",
@@ -293,107 +293,107 @@
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'Feedback',
-                            items:[
+                            blocks:[
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                             ]
                         },
                         {
                             title:'Elements',
-                            items:[
+                            blocks:[
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'pages Exemples',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         }

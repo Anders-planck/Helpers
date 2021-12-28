@@ -110,18 +110,20 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /components/header-index.vue ($id_265d4565)
 // - /components/services.vue ($id_0fea1836)
 // - /components/example.vue ($id_b9253967)
-// - /components/get-started.vue ($id_645fb6af)
 // - /pages/index.vue ($id_cca58e97)
+// - /pages/new_content.vue ($id_f76232be)
+// - /node_modules/vue-prism-editor/dist/prismeditor.esm.js ($id_e506e72f)
+// - /pages/pageview.vue ($id_1c4ee556)
 // - /components/Menu.vue ($id_b1d32007)
 // - /components/card.vue ($id_d9dfd282)
 // - /components/Section.vue ($id_5ff493dc)
 // - /components/contents-sections.vue ($id_0b3ec488)
 // - /pages/plugins/index.vue ($id_b9b13c0b)
 // - /components/content.vue ($id_3032adb6)
-// - /node_modules/vue-prism-editor/dist/prismeditor.esm.js ($id_e506e72f)
 // - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
 // - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// - /components/get-started.vue ($id_645fb6af)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
 // Dependencies: 
@@ -145,6 +147,8 @@ const $id_60f0615f = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /node_modules/nuxt3/dist/meta/runtime/plugin.mjs ($id_9fd5f35e)
 // - /node_modules/nuxt3/dist/pages/runtime/page.vue ($id_10628d40)
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
+// - /pages/new_content.vue ($id_f76232be)
+// - /pages/pageview.vue ($id_1c4ee556)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // Dependencies: 
 // - /node_modules/nuxt3/dist/app/nuxt.mjs ($id_bf77ef36)
@@ -920,7 +924,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/tailwind.sc
 
 // --------------------
 const $id_a0d95d60 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");\n/*\n! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com\n*/\n/*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n::before,\n::after {\n  --tw-content: '';\n}\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\nabbr[title] {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n/*\nRemove the default font size and weight for headings.\n*/\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n/*\nAdd the correct font weight in Edge and Safari.\n*/\nb,\nstrong {\n  font-weight: bolder;\n}\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n/*\nAdd the correct font size in all browsers.\n*/\nsmall {\n  font-size: 80%;\n}\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsub {\n  bottom: -0.25em;\n}\nsup {\n  top: -0.5em;\n}\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\nbutton,\nselect {\n  text-transform: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n:-moz-focusring {\n  outline: auto;\n}\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\nprogress {\n  vertical-align: baseline;\n}\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n/*\nAdd the correct display in Chrome and Safari.\n*/\nsummary {\n  display: list-item;\n}\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n  padding: 0;\n}\nlegend {\n  padding: 0;\n}\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n/*\nPrevent resizing textareas horizontally by default.\n*/\ntextarea {\n  resize: vertical;\n}\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n/*\nSet the default cursor for buttons.\n*/\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n[hidden] {\n  display: none;\n}\n*, ::before, ::after{\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur: var(--tw-empty,/*!*/ /*!*/);\n  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);\n  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);\n  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);\n  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-invert: var(--tw-empty,/*!*/ /*!*/);\n  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);\n  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);\n  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.aspect-h-1{\n  --tw-aspect-h: 1;\n}\n.aspect-w-2{\n  position: relative;\n  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);\n  --tw-aspect-w: 2;\n}\n.aspect-w-2 > *{\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n.absolute{\n  position: absolute;\n}\n.relative{\n  position: relative;\n}\n.sticky{\n  position: -webkit-sticky;\n  position: sticky;\n}\n.inset-x-0{\n  left: 0px;\n  right: 0px;\n}\n.top-0{\n  top: 0px;\n}\n.bottom-full{\n  bottom: 100%;\n}\n.top-full{\n  top: 100%;\n}\n.left-1\\/2{\n  left: 50%;\n}\n.z-50{\n  z-index: 50;\n}\n.col-span-3{\n  grid-column: span 3 / span 3;\n}\n.my-4{\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\n.my-16{\n  margin-top: 4rem;\n  margin-bottom: 4rem;\n}\n.my-8{\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.mt-4{\n  margin-top: 1rem;\n}\n.mb-2\\.5{\n  margin-bottom: 0.625rem;\n}\n.mb-2{\n  margin-bottom: 0.5rem;\n}\n.-mt-px{\n  margin-top: -1px;\n}\n.-ml-2{\n  margin-left: -0.5rem;\n}\n.mt-2{\n  margin-top: 0.5rem;\n}\n.ml-4{\n  margin-left: 1rem;\n}\n.mt-16{\n  margin-top: 4rem;\n}\n.block{\n  display: block;\n}\n.inline-block{\n  display: inline-block;\n}\n.flex{\n  display: flex;\n}\n.grid{\n  display: grid;\n}\n.hidden{\n  display: none;\n}\n.h-5{\n  height: 1.25rem;\n}\n.h-6{\n  height: 1.5rem;\n}\n.h-\\[50vh\\]{\n  height: 50vh;\n}\n.h-full{\n  height: 100%;\n}\n.h-60{\n  height: 15rem;\n}\n.h-10{\n  height: 2.5rem;\n}\n.w-screen{\n  width: 100vw;\n}\n.w-full{\n  width: 100%;\n}\n.w-5{\n  width: 1.25rem;\n}\n.w-6{\n  width: 1.5rem;\n}\n.w-2\\/3{\n  width: 66.666667%;\n}\n.w-72{\n  width: 18rem;\n}\n.w-10{\n  width: 2.5rem;\n}\n.w-3\\/5{\n  width: 60%;\n}\n.-translate-y-full{\n  --tw-translate-y: -100%;\n  transform: var(--tw-transform);\n}\n.translate-y-full{\n  --tw-translate-y: 100%;\n  transform: var(--tw-transform);\n}\n.-rotate-\\[8deg\\]{\n  --tw-rotate: -8deg;\n  transform: var(--tw-transform);\n}\n.scale-0{\n  --tw-scale-x: 0;\n  --tw-scale-y: 0;\n  transform: var(--tw-transform);\n}\n.cursor-pointer{\n  cursor: pointer;\n}\n.grid-flow-row{\n  grid-auto-flow: row;\n}\n.grid-cols-3{\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n}\n.grid-cols-1{\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-rows-1{\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n}\n.flex-col{\n  flex-direction: column;\n}\n.flex-col-reverse{\n  flex-direction: column-reverse;\n}\n.flex-wrap{\n  flex-wrap: wrap;\n}\n.items-start{\n  align-items: flex-start;\n}\n.items-end{\n  align-items: flex-end;\n}\n.items-center{\n  align-items: center;\n}\n.justify-start{\n  justify-content: flex-start;\n}\n.justify-end{\n  justify-content: flex-end;\n}\n.justify-center{\n  justify-content: center;\n}\n.justify-between{\n  justify-content: space-between;\n}\n.justify-around{\n  justify-content: space-around;\n}\n.justify-evenly{\n  justify-content: space-evenly;\n}\n.gap-6{\n  gap: 1.5rem;\n}\n.gap-8{\n  gap: 2rem;\n}\n.gap-x-8{\n  -moz-column-gap: 2rem;\n       column-gap: 2rem;\n}\n.gap-y-6{\n  row-gap: 1.5rem;\n}\n.space-y-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\n.space-x-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.25rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(1rem * var(--tw-space-x-reverse));\n  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-y-16 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(4rem * var(--tw-space-y-reverse));\n}\n.space-y-6 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));\n}\n.space-y-8 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2rem * var(--tw-space-y-reverse));\n}\n.space-y-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1rem * var(--tw-space-y-reverse));\n}\n.space-y-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));\n}\n.overflow-hidden{\n  overflow: hidden;\n}\n.overflow-scroll{\n  overflow: scroll;\n}\n.overflow-x-hidden{\n  overflow-x: hidden;\n}\n.scroll-smooth{\n  scroll-behavior: smooth;\n}\n.rounded-lg{\n  border-radius: 0.5rem;\n}\n.rounded-md{\n  border-radius: 0.375rem;\n}\n.rounded-t-lg{\n  border-top-left-radius: 0.5rem;\n  border-top-right-radius: 0.5rem;\n}\n.border-2{\n  border-width: 2px;\n}\n.border{\n  border-width: 1px;\n}\n.border-t-2{\n  border-top-width: 2px;\n}\n.border-b-2{\n  border-bottom-width: 2px;\n}\n.border-gray-200{\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n.bg-white{\n  background-color: #f4faffff;\n}\n.bg-red-100{\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 226 226 / var(--tw-bg-opacity));\n}\n.bg-gray-900{\n  --tw-bg-opacity: 1;\n  background-color: rgb(17 24 39 / var(--tw-bg-opacity));\n}\n.bg-bleuTherne{\n  --tw-bg-opacity: 1;\n  background-color: rgb(31 41 55 / var(--tw-bg-opacity));\n}\n.bg-jean\\/10{\n  background-color: rgb(0 170 255 / 0.1);\n}\n.bg-jean{\n  background-color: #00AAFFff;\n}\n.bg-slate-400{\n  --tw-bg-opacity: 1;\n  background-color: rgb(148 163 184 / var(--tw-bg-opacity));\n}\n.fill-white{\n  fill: #f4faffff;\n}\n.fill-gray-600{\n  fill: #4b5563;\n}\n.fill-slate-900{\n  fill: #0f172a;\n}\n.stroke-jean{\n  stroke: #00AAFFff;\n}\n.stroke-slate-600{\n  stroke: #475569;\n}\n.stroke-dark{\n  stroke: #020203ff;\n}\n.object-cover{\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.p-2{\n  padding: 0.5rem;\n}\n.p-4{\n  padding: 1rem;\n}\n.p-8{\n  padding: 2rem;\n}\n.px-4{\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.py-2{\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.px-1{\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.py-8{\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n.px-2{\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.py-1{\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.px-3{\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.px-8{\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.py-4{\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.pb-2{\n  padding-bottom: 0.5rem;\n}\n.text-center{\n  text-align: center;\n}\n.text-5xl{\n  font-size: 3rem;\n  line-height: 1;\n}\n.text-sm{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-\\[0\\.625rem\\]{\n  font-size: 0.625rem;\n}\n.text-lg{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-xl{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.text-3xl{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n.text-2xl{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-extrabold{\n  font-weight: 800;\n}\n.font-bold{\n  font-weight: 700;\n}\n.font-medium{\n  font-weight: 500;\n}\n.font-semibold{\n  font-weight: 600;\n}\n.font-black{\n  font-weight: 900;\n}\n.uppercase{\n  text-transform: uppercase;\n}\n.capitalize{\n  text-transform: capitalize;\n}\n.leading-4{\n  line-height: 1rem;\n}\n.tracking-wide{\n  letter-spacing: 0.025em;\n}\n.tracking-wider{\n  letter-spacing: 0.05em;\n}\n.text-dark{\n  color: #020203ff;\n}\n.text-gray-500{\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n.text-jean{\n  color: #00AAFFff;\n}\n.text-slate-500{\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n.text-red-900{\n  --tw-text-opacity: 1;\n  color: rgb(127 29 29 / var(--tw-text-opacity));\n}\n.text-gray-400{\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.text-gray-600{\n  --tw-text-opacity: 1;\n  color: rgb(75 85 99 / var(--tw-text-opacity));\n}\n.text-white{\n  color: #f4faffff;\n}\n.text-gray-900{\n  --tw-text-opacity: 1;\n  color: rgb(17 24 39 / var(--tw-text-opacity));\n}\n.opacity-0{\n  opacity: 0;\n}\n.shadow-sm{\n  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-lg{\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-red-100\\/30{\n  --tw-shadow-color: rgb(254 226 226 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-jean\\/30{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.outline{\n  outline-style: solid;\n}\n.ring-1{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-black{\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));\n}\n.ring-opacity-5{\n  --tw-ring-opacity: 0.05;\n}\n.contrast-100{\n  --tw-contrast: contrast(1);\n  filter: var(--tw-filter);\n}\n.drop-shadow-md{\n  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));\n  filter: var(--tw-filter);\n}\n.filter{\n  filter: var(--tw-filter);\n}\n.transition-all{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-200{\n  transition-duration: 200ms;\n}\n.duration-100{\n  transition-duration: 100ms;\n}\n.duration-300{\n  transition-duration: 300ms;\n}\n.ease-in-out{\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.\\[clip-path\\:cicle\\(70\\%_at_20\\%_30\\%\\)\\]{\n  -webkit-clip-path: cicle(70% at 20% 30%);\n          clip-path: cicle(70% at 20% 30%);\n}\nbody {\n  font-family: \"Raleway\", sans-serif;\n}\n.hover\\:scale-95:hover{\n  --tw-scale-x: .95;\n  --tw-scale-y: .95;\n  transform: var(--tw-transform);\n}\n.hover\\:border-transparent:hover{\n  border-color: transparent;\n}\n.hover\\:bg-jean:hover{\n  background-color: #00AAFFff;\n}\n.hover\\:fill-dark:hover{\n  fill: #020203ff;\n}\n.hover\\:text-dark:hover{\n  color: #020203ff;\n}\n.hover\\:text-jean:hover{\n  color: #00AAFFff;\n}\n.hover\\:text-white:hover{\n  color: #f4faffff;\n}\n.hover\\:shadow-jean\\/30:hover{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.hover\\:ring-1:hover{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.hover\\:ring-dark:hover{\n  --tw-ring-color: #020203ff;\n}\n.hover\\:ring-red-600:hover{\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(220 38 38 / var(--tw-ring-opacity));\n}\n.group:hover .group-hover\\:h-full{\n  height: 100%;\n}\n.group:hover .group-hover\\:-translate-y-0{\n  --tw-translate-y: -0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:translate-y-0{\n  --tw-translate-y: 0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:scale-100{\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:opacity-100{\n  opacity: 1;\n}\n@media (min-width: 640px){\n  .sm\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .sm\\:gap-y-8{\n    row-gap: 2rem;\n  }\n  .sm\\:px-8{\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width: 768px){\n  .md\\:col-span-1{\n    grid-column: span 1 / span 1;\n  }\n  .md\\:row-span-full{\n    grid-row: 1 / -1;\n  }\n  .md\\:mr-auto{\n    margin-right: auto;\n  }\n  .md\\:mt-16{\n    margin-top: 4rem;\n  }\n  .md\\:block{\n    display: block;\n  }\n  .md\\:inline-block{\n    display: inline-block;\n  }\n  .md\\:flex{\n    display: flex;\n  }\n  .md\\:w-full{\n    width: 100%;\n  }\n  .md\\:w-2\\/5{\n    width: 40%;\n  }\n  .md\\:w-3\\/5{\n    width: 60%;\n  }\n  .md\\:grid-cols-3{\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .md\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .md\\:flex-row{\n    flex-direction: row;\n  }\n  .md\\:justify-between{\n    justify-content: space-between;\n  }\n  .md\\:space-x-8 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(2rem * var(--tw-space-x-reverse));\n    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(1rem * var(--tw-space-x-reverse));\n    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:space-y-0 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-y-reverse: 0;\n    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));\n    margin-bottom: calc(0px * var(--tw-space-y-reverse));\n  }\n  .md\\:p-0{\n    padding: 0px;\n  }\n  .md\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .md\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n  .md\\:px-16{\n    padding-left: 4rem;\n    padding-right: 4rem;\n  }\n}\n@media (min-width: 1024px){\n  .lg\\:mx-auto{\n    margin-left: auto;\n    margin-right: auto;\n  }\n  .lg\\:inline-block{\n    display: inline-block;\n  }\n  .lg\\:w-10\\/12{\n    width: 83.333333%;\n  }\n  .lg\\:grid-cols-4{\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .lg\\:gap-x-8{\n    -moz-column-gap: 2rem;\n         column-gap: 2rem;\n  }\n  .lg\\:space-x-2 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:space-x-32 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(8rem * var(--tw-space-x-reverse));\n    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n  .lg\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .lg\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n@media (min-width: 1280px){\n  .xl\\:w-8\\/12{\n    width: 66.666667%;\n  }\n  .xl\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n}";
+__vite_ssr_exports__.default = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");\n@import url(\"https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap\");\n/*\n! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com\n*/\n/*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: currentColor; /* 2 */\n}\n::before,\n::after {\n  --tw-content: '';\n}\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n*/\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n}\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\nabbr[title] {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n/*\nRemove the default font size and weight for headings.\n*/\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n/*\nAdd the correct font weight in Edge and Safari.\n*/\nb,\nstrong {\n  font-weight: bolder;\n}\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n/*\nAdd the correct font size in all browsers.\n*/\nsmall {\n  font-size: 80%;\n}\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsub {\n  bottom: -0.25em;\n}\nsup {\n  top: -0.5em;\n}\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\nbutton,\nselect {\n  text-transform: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n:-moz-focusring {\n  outline: auto;\n}\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\nprogress {\n  vertical-align: baseline;\n}\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n/*\nAdd the correct display in Chrome and Safari.\n*/\nsummary {\n  display: list-item;\n}\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n  padding: 0;\n}\nlegend {\n  padding: 0;\n}\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n/*\nPrevent resizing textareas horizontally by default.\n*/\ntextarea {\n  resize: vertical;\n}\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n/*\nSet the default cursor for buttons.\n*/\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n/*\nEnsure the default browser behavior of the `hidden` attribute.\n*/\n[hidden] {\n  display: none;\n}\n[type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  background-color: #fff;\n  border-color: #6b7280;\n  border-width: 1px;\n  border-radius: 0px;\n  padding-top: 0.5rem;\n  padding-right: 0.75rem;\n  padding-bottom: 0.5rem;\n  padding-left: 0.75rem;\n  font-size: 1rem;\n  line-height: 1.5rem;\n  --tw-shadow: 0 0 #0000;\n}\n[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: #2563eb;\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);\n  border-color: #2563eb;\n}\ninput::-moz-placeholder, textarea::-moz-placeholder{\n  color: #6b7280;\n  opacity: 1;\n}\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder{\n  color: #6b7280;\n  opacity: 1;\n}\ninput::placeholder,textarea::placeholder{\n  color: #6b7280;\n  opacity: 1;\n}\n::-webkit-datetime-edit-fields-wrapper{\n  padding: 0;\n}\n::-webkit-date-and-time-value{\n  min-height: 1.5em;\n}\nselect{\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e\");\n  background-position: right 0.5rem center;\n  background-repeat: no-repeat;\n  background-size: 1.5em 1.5em;\n  padding-right: 2.5rem;\n  -webkit-print-color-adjust: exact;\n          color-adjust: exact;\n}\n[multiple]{\n  background-image: initial;\n  background-position: initial;\n  background-repeat: unset;\n  background-size: initial;\n  padding-right: 0.75rem;\n  -webkit-print-color-adjust: unset;\n          color-adjust: unset;\n}\n[type='checkbox'],[type='radio']{\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  padding: 0;\n  -webkit-print-color-adjust: exact;\n          color-adjust: exact;\n  display: inline-block;\n  vertical-align: middle;\n  background-origin: border-box;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  flex-shrink: 0;\n  height: 1rem;\n  width: 1rem;\n  color: #2563eb;\n  background-color: #fff;\n  border-color: #6b7280;\n  border-width: 1px;\n  --tw-shadow: 0 0 #0000;\n}\n[type='checkbox']{\n  border-radius: 0px;\n}\n[type='radio']{\n  border-radius: 100%;\n}\n[type='checkbox']:focus,[type='radio']:focus{\n  outline: 2px solid transparent;\n  outline-offset: 2px;\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 2px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: #2563eb;\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);\n}\n[type='checkbox']:checked,[type='radio']:checked{\n  border-color: transparent;\n  background-color: currentColor;\n  background-size: 100% 100%;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n[type='checkbox']:checked{\n  background-image: url(\"data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e\");\n}\n[type='radio']:checked{\n  background-image: url(\"data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e\");\n}\n[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{\n  border-color: transparent;\n  background-color: currentColor;\n}\n[type='checkbox']:indeterminate{\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e\");\n  border-color: transparent;\n  background-color: currentColor;\n  background-size: 100% 100%;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{\n  border-color: transparent;\n  background-color: currentColor;\n}\n[type='file']{\n  background: unset;\n  border-color: inherit;\n  border-width: 0;\n  border-radius: 0;\n  padding: 0;\n  font-size: unset;\n  line-height: inherit;\n}\n[type='file']:focus{\n  outline: 1px auto -webkit-focus-ring-color;\n}\n*, ::before, ::after{\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur: var(--tw-empty,/*!*/ /*!*/);\n  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);\n  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);\n  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);\n  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-invert: var(--tw-empty,/*!*/ /*!*/);\n  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);\n  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);\n  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);\n  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.aspect-h-1{\n  --tw-aspect-h: 1;\n}\n.aspect-w-2{\n  position: relative;\n  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);\n  --tw-aspect-w: 2;\n}\n.aspect-w-2 > *{\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n.absolute{\n  position: absolute;\n}\n.relative{\n  position: relative;\n}\n.sticky{\n  position: -webkit-sticky;\n  position: sticky;\n}\n.inset-x-0{\n  left: 0px;\n  right: 0px;\n}\n.top-0{\n  top: 0px;\n}\n.bottom-full{\n  bottom: 100%;\n}\n.top-full{\n  top: 100%;\n}\n.left-1\\/2{\n  left: 50%;\n}\n.z-50{\n  z-index: 50;\n}\n.col-span-3{\n  grid-column: span 3 / span 3;\n}\n.col-span-1{\n  grid-column: span 1 / span 1;\n}\n.my-4{\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\n.my-8{\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.my-16{\n  margin-top: 4rem;\n  margin-bottom: 4rem;\n}\n.mx-auto{\n  margin-left: auto;\n  margin-right: auto;\n}\n.my-32{\n  margin-top: 8rem;\n  margin-bottom: 8rem;\n}\n.mt-4{\n  margin-top: 1rem;\n}\n.mb-2\\.5{\n  margin-bottom: 0.625rem;\n}\n.mb-2{\n  margin-bottom: 0.5rem;\n}\n.-mt-px{\n  margin-top: -1px;\n}\n.-ml-2{\n  margin-left: -0.5rem;\n}\n.mt-2{\n  margin-top: 0.5rem;\n}\n.ml-4{\n  margin-left: 1rem;\n}\n.mt-8{\n  margin-top: 2rem;\n}\n.mb-4{\n  margin-bottom: 1rem;\n}\n.block{\n  display: block;\n}\n.inline-block{\n  display: inline-block;\n}\n.flex{\n  display: flex;\n}\n.grid{\n  display: grid;\n}\n.hidden{\n  display: none;\n}\n.h-5{\n  height: 1.25rem;\n}\n.h-6{\n  height: 1.5rem;\n}\n.h-\\[50vh\\]{\n  height: 50vh;\n}\n.h-full{\n  height: 100%;\n}\n.h-60{\n  height: 15rem;\n}\n.h-10{\n  height: 2.5rem;\n}\n.h-9{\n  height: 2.25rem;\n}\n.h-96{\n  height: 24rem;\n}\n.w-screen{\n  width: 100vw;\n}\n.w-full{\n  width: 100%;\n}\n.w-5{\n  width: 1.25rem;\n}\n.w-6{\n  width: 1.5rem;\n}\n.w-2\\/3{\n  width: 66.666667%;\n}\n.w-72{\n  width: 18rem;\n}\n.w-10{\n  width: 2.5rem;\n}\n.w-9{\n  width: 2.25rem;\n}\n.w-3\\/5{\n  width: 60%;\n}\n.-translate-y-full{\n  --tw-translate-y: -100%;\n  transform: var(--tw-transform);\n}\n.translate-y-full{\n  --tw-translate-y: 100%;\n  transform: var(--tw-transform);\n}\n.-rotate-\\[8deg\\]{\n  --tw-rotate: -8deg;\n  transform: var(--tw-transform);\n}\n.scale-0{\n  --tw-scale-x: 0;\n  --tw-scale-y: 0;\n  transform: var(--tw-transform);\n}\n.cursor-pointer{\n  cursor: pointer;\n}\n.grid-flow-row{\n  grid-auto-flow: row;\n}\n.grid-cols-3{\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n}\n.grid-cols-1{\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n}\n.grid-rows-1{\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n}\n.flex-col{\n  flex-direction: column;\n}\n.flex-col-reverse{\n  flex-direction: column-reverse;\n}\n.flex-wrap{\n  flex-wrap: wrap;\n}\n.items-start{\n  align-items: flex-start;\n}\n.items-end{\n  align-items: flex-end;\n}\n.items-center{\n  align-items: center;\n}\n.justify-start{\n  justify-content: flex-start;\n}\n.justify-end{\n  justify-content: flex-end;\n}\n.justify-center{\n  justify-content: center;\n}\n.justify-between{\n  justify-content: space-between;\n}\n.justify-around{\n  justify-content: space-around;\n}\n.justify-evenly{\n  justify-content: space-evenly;\n}\n.gap-6{\n  gap: 1.5rem;\n}\n.gap-8{\n  gap: 2rem;\n}\n.gap-x-8{\n  -moz-column-gap: 2rem;\n       column-gap: 2rem;\n}\n.gap-y-6{\n  row-gap: 1.5rem;\n}\n.gap-y-4{\n  row-gap: 1rem;\n}\n.space-y-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));\n}\n.space-x-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.25rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(1rem * var(--tw-space-x-reverse));\n  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-x-2 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-x-reverse: 0;\n  margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n}\n.space-y-16 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(4rem * var(--tw-space-y-reverse));\n}\n.space-y-6 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));\n}\n.space-y-4 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(1rem * var(--tw-space-y-reverse));\n}\n.space-y-8 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(2rem * var(--tw-space-y-reverse));\n}\n.space-y-1 > :not([hidden]) ~ :not([hidden]){\n  --tw-space-y-reverse: 0;\n  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));\n  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));\n}\n.overflow-hidden{\n  overflow: hidden;\n}\n.overflow-scroll{\n  overflow: scroll;\n}\n.overflow-x-hidden{\n  overflow-x: hidden;\n}\n.scroll-smooth{\n  scroll-behavior: smooth;\n}\n.rounded-lg{\n  border-radius: 0.5rem;\n}\n.rounded-md{\n  border-radius: 0.375rem;\n}\n.rounded-t-lg{\n  border-top-left-radius: 0.5rem;\n  border-top-right-radius: 0.5rem;\n}\n.border-2{\n  border-width: 2px;\n}\n.border{\n  border-width: 1px;\n}\n.border-t-2{\n  border-top-width: 2px;\n}\n.border-b-2{\n  border-bottom-width: 2px;\n}\n.border-gray-200{\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n.bg-white{\n  background-color: #f4faffff;\n}\n.bg-jean\\/20{\n  background-color: rgb(0 170 255 / 0.2);\n}\n.bg-gray-900{\n  --tw-bg-opacity: 1;\n  background-color: rgb(17 24 39 / var(--tw-bg-opacity));\n}\n.bg-bleuTherne{\n  --tw-bg-opacity: 1;\n  background-color: rgb(31 41 55 / var(--tw-bg-opacity));\n}\n.bg-jean\\/10{\n  background-color: rgb(0 170 255 / 0.1);\n}\n.bg-jean{\n  background-color: #00AAFFff;\n}\n.bg-slate-400{\n  --tw-bg-opacity: 1;\n  background-color: rgb(148 163 184 / var(--tw-bg-opacity));\n}\n.fill-white{\n  fill: #f4faffff;\n}\n.fill-gray-600{\n  fill: #4b5563;\n}\n.fill-slate-900{\n  fill: #0f172a;\n}\n.stroke-jean{\n  stroke: #00AAFFff;\n}\n.stroke-slate-600{\n  stroke: #475569;\n}\n.stroke-dark{\n  stroke: #020203ff;\n}\n.object-cover{\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.p-2{\n  padding: 0.5rem;\n}\n.p-4{\n  padding: 1rem;\n}\n.p-8{\n  padding: 2rem;\n}\n.px-4{\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.px-1{\n  padding-left: 0.25rem;\n  padding-right: 0.25rem;\n}\n.py-2{\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.py-8{\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n.px-2{\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.py-1{\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.px-3{\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n.px-8{\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.py-4{\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.pb-2{\n  padding-bottom: 0.5rem;\n}\n.text-center{\n  text-align: center;\n}\n.text-5xl{\n  font-size: 3rem;\n  line-height: 1;\n}\n.text-sm{\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-\\[0\\.625rem\\]{\n  font-size: 0.625rem;\n}\n.text-lg{\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-xl{\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.text-3xl{\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n}\n.text-4xl{\n  font-size: 2.25rem;\n  line-height: 2.5rem;\n}\n.text-2xl{\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.font-extrabold{\n  font-weight: 800;\n}\n.font-bold{\n  font-weight: 700;\n}\n.font-medium{\n  font-weight: 500;\n}\n.font-semibold{\n  font-weight: 600;\n}\n.font-black{\n  font-weight: 900;\n}\n.uppercase{\n  text-transform: uppercase;\n}\n.capitalize{\n  text-transform: capitalize;\n}\n.leading-4{\n  line-height: 1rem;\n}\n.tracking-wide{\n  letter-spacing: 0.025em;\n}\n.tracking-wider{\n  letter-spacing: 0.05em;\n}\n.text-gray-500{\n  --tw-text-opacity: 1;\n  color: rgb(107 114 128 / var(--tw-text-opacity));\n}\n.text-jean{\n  color: #00AAFFff;\n}\n.text-slate-500{\n  --tw-text-opacity: 1;\n  color: rgb(100 116 139 / var(--tw-text-opacity));\n}\n.text-dark{\n  color: #020203ff;\n}\n.text-gray-400{\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.text-gray-600{\n  --tw-text-opacity: 1;\n  color: rgb(75 85 99 / var(--tw-text-opacity));\n}\n.text-white{\n  color: #f4faffff;\n}\n.text-gray-900{\n  --tw-text-opacity: 1;\n  color: rgb(17 24 39 / var(--tw-text-opacity));\n}\n.text-black{\n  --tw-text-opacity: 1;\n  color: rgb(0 0 0 / var(--tw-text-opacity));\n}\n.underline{\n  -webkit-text-decoration-line: underline;\n          text-decoration-line: underline;\n}\n.decoration-red-900\\/30{\n  -webkit-text-decoration-color: rgb(127 29 29 / 0.3);\n          text-decoration-color: rgb(127 29 29 / 0.3);\n}\n.decoration-green-900\\/30{\n  -webkit-text-decoration-color: rgb(20 83 45 / 0.3);\n          text-decoration-color: rgb(20 83 45 / 0.3);\n}\n.decoration-jean\\/30{\n  -webkit-text-decoration-color: rgb(0 170 255 / 0.3);\n          text-decoration-color: rgb(0 170 255 / 0.3);\n}\n.decoration-indigo-900\\/30{\n  -webkit-text-decoration-color: rgb(49 46 129 / 0.3);\n          text-decoration-color: rgb(49 46 129 / 0.3);\n}\n.decoration-wavy{\n  -webkit-text-decoration-style: wavy;\n          text-decoration-style: wavy;\n}\n.opacity-0{\n  opacity: 0;\n}\n.shadow-sm{\n  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-lg{\n  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-jean\\/30{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.shadow-jean\\/10{\n  --tw-shadow-color: rgb(0 170 255 / 0.1);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.outline{\n  outline-style: solid;\n}\n.ring-1{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.ring-black{\n  --tw-ring-opacity: 1;\n  --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));\n}\n.ring-opacity-5{\n  --tw-ring-opacity: 0.05;\n}\n.contrast-100{\n  --tw-contrast: contrast(1);\n  filter: var(--tw-filter);\n}\n.drop-shadow-md{\n  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));\n  filter: var(--tw-filter);\n}\n.filter{\n  filter: var(--tw-filter);\n}\n.transition-all{\n  transition-property: all;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.duration-200{\n  transition-duration: 200ms;\n}\n.duration-100{\n  transition-duration: 100ms;\n}\n.duration-300{\n  transition-duration: 300ms;\n}\n.ease-in-out{\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.\\[clip-path\\:cicle\\(70\\%_at_20\\%_30\\%\\)\\]{\n  -webkit-clip-path: cicle(70% at 20% 30%);\n          clip-path: cicle(70% at 20% 30%);\n}\nbody {\n  font-family: \"Raleway\", sans-serif;\n}\n.placeholder\\:italic::-moz-placeholder{\n  font-style: italic;\n}\n.placeholder\\:italic:-ms-input-placeholder{\n  font-style: italic;\n}\n.placeholder\\:italic::placeholder{\n  font-style: italic;\n}\n.placeholder\\:text-gray-400::-moz-placeholder{\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.placeholder\\:text-gray-400:-ms-input-placeholder{\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.placeholder\\:text-gray-400::placeholder{\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.hover\\:scale-95:hover{\n  --tw-scale-x: .95;\n  --tw-scale-y: .95;\n  transform: var(--tw-transform);\n}\n.hover\\:border-transparent:hover{\n  border-color: transparent;\n}\n.hover\\:bg-jean:hover{\n  background-color: #00AAFFff;\n}\n.hover\\:fill-dark:hover{\n  fill: #020203ff;\n}\n.hover\\:text-dark:hover{\n  color: #020203ff;\n}\n.hover\\:text-jean:hover{\n  color: #00AAFFff;\n}\n.hover\\:text-white:hover{\n  color: #f4faffff;\n}\n.hover\\:shadow-jean\\/30:hover{\n  --tw-shadow-color: rgb(0 170 255 / 0.3);\n  --tw-shadow: var(--tw-shadow-colored);\n}\n.hover\\:ring-1:hover{\n  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);\n  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);\n  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);\n}\n.hover\\:ring-jean:hover{\n  --tw-ring-color: #00AAFFff;\n}\n.group:hover .group-hover\\:h-full{\n  height: 100%;\n}\n.group:hover .group-hover\\:-translate-y-0{\n  --tw-translate-y: -0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:translate-y-0{\n  --tw-translate-y: 0px;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:scale-100{\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  transform: var(--tw-transform);\n}\n.group:hover .group-hover\\:opacity-100{\n  opacity: 1;\n}\n@media (min-width: 640px){\n  .sm\\:col-span-1{\n    grid-column: span 1 / span 1;\n  }\n  .sm\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .sm\\:gap-y-8{\n    row-gap: 2rem;\n  }\n  .sm\\:px-8{\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width: 768px){\n  .md\\:col-span-1{\n    grid-column: span 1 / span 1;\n  }\n  .md\\:col-span-2{\n    grid-column: span 2 / span 2;\n  }\n  .md\\:row-span-full{\n    grid-row: 1 / -1;\n  }\n  .md\\:mx-auto{\n    margin-left: auto;\n    margin-right: auto;\n  }\n  .md\\:mr-auto{\n    margin-right: auto;\n  }\n  .md\\:mt-16{\n    margin-top: 4rem;\n  }\n  .md\\:block{\n    display: block;\n  }\n  .md\\:inline-block{\n    display: inline-block;\n  }\n  .md\\:flex{\n    display: flex;\n  }\n  .md\\:h-6{\n    height: 1.5rem;\n  }\n  .md\\:w-full{\n    width: 100%;\n  }\n  .md\\:w-2\\/5{\n    width: 40%;\n  }\n  .md\\:w-3\\/5{\n    width: 60%;\n  }\n  .md\\:w-11\\/12{\n    width: 91.666667%;\n  }\n  .md\\:w-auto{\n    width: auto;\n  }\n  .md\\:w-6{\n    width: 1.5rem;\n  }\n  .md\\:grid-cols-3{\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .md\\:grid-cols-2{\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n  .md\\:flex-row{\n    flex-direction: row;\n  }\n  .md\\:justify-between{\n    justify-content: space-between;\n  }\n  .md\\:gap-x-4{\n    -moz-column-gap: 1rem;\n         column-gap: 1rem;\n  }\n  .md\\:gap-y-0{\n    row-gap: 0px;\n  }\n  .md\\:space-x-8 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(2rem * var(--tw-space-x-reverse));\n    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:space-x-4 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(1rem * var(--tw-space-x-reverse));\n    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .md\\:p-0{\n    padding: 0px;\n  }\n  .md\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .md\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n  .md\\:px-16{\n    padding-left: 4rem;\n    padding-right: 4rem;\n  }\n  .md\\:px-6{\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n  .md\\:py-4{\n    padding-top: 1rem;\n    padding-bottom: 1rem;\n  }\n}\n@media (min-width: 1024px){\n  .lg\\:mx-auto{\n    margin-left: auto;\n    margin-right: auto;\n  }\n  .lg\\:w-6\\/12{\n    width: 50%;\n  }\n  .lg\\:w-10\\/12{\n    width: 83.333333%;\n  }\n  .lg\\:w-9\\/12{\n    width: 75%;\n  }\n  .lg\\:grid-cols-4{\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .lg\\:gap-x-8{\n    -moz-column-gap: 2rem;\n         column-gap: 2rem;\n  }\n  .lg\\:space-x-2 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(0.5rem * var(--tw-space-x-reverse));\n    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:space-x-32 > :not([hidden]) ~ :not([hidden]){\n    --tw-space-x-reverse: 0;\n    margin-right: calc(8rem * var(--tw-space-x-reverse));\n    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));\n  }\n  .lg\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n  .lg\\:py-2{\n    padding-top: 0.5rem;\n    padding-bottom: 0.5rem;\n  }\n  .lg\\:px-4{\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n@media (min-width: 1280px){\n  .xl\\:mx-auto{\n    margin-left: auto;\n    margin-right: auto;\n  }\n  .xl\\:w-7\\/12{\n    width: 58.333333%;\n  }\n  .xl\\:w-8\\/12{\n    width: 66.666667%;\n  }\n  .xl\\:px-0{\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n}";
 }
 
 
@@ -1881,8 +1885,9 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // - /components/header-index.vue ($id_265d4565)
 // - /components/services.vue ($id_0fea1836)
 // - /components/example.vue ($id_b9253967)
-// - /components/get-started.vue ($id_645fb6af)
 // - /pages/index.vue ($id_cca58e97)
+// - /pages/new_content.vue ($id_f76232be)
+// - /pages/pageview.vue ($id_1c4ee556)
 // - /components/Menu.vue ($id_b1d32007)
 // - /components/card.vue ($id_d9dfd282)
 // - /components/Section.vue ($id_5ff493dc)
@@ -1891,6 +1896,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // - /components/content.vue ($id_3032adb6)
 // - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
+// - /components/get-started.vue ($id_645fb6af)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
 // Dependencies: 
@@ -1914,8 +1920,9 @@ const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /components/header-index.vue ($id_265d4565)
 // - /components/services.vue ($id_0fea1836)
 // - /components/example.vue ($id_b9253967)
-// - /components/get-started.vue ($id_645fb6af)
 // - /pages/index.vue ($id_cca58e97)
+// - /pages/new_content.vue ($id_f76232be)
+// - /pages/pageview.vue ($id_1c4ee556)
 // - /components/Menu.vue ($id_b1d32007)
 // - /components/card.vue ($id_d9dfd282)
 // - /components/Section.vue ($id_5ff493dc)
@@ -1924,6 +1931,7 @@ const $id_b215fa1c = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /components/content.vue ($id_3032adb6)
 // - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
+// - /components/get-started.vue ($id_645fb6af)
 // - /node_modules/nuxt3/dist/app/components/nuxt-root.vue ($id_f8564e04)
 // - /node_modules/nuxt3/dist/pages/runtime/app.vue ($id_0851ff57)
 // Dependencies: 
@@ -2193,7 +2201,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
 
   _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "overflow-hidden" }, _attrs))}><div class="bg-white">`)
   _push(__vite_ssr_import_3__.ssrRenderComponent(_component_navbar, null, null, _parent))
-  _push(`<div class="w-full lg:w-10/12 xl:w-8/12 lg:mx-auto">`)
+  _push(`<div class="w-full lg:w-9/12 xl:w-8/12 md:w-11/12 mx-auto">`)
   __vite_ssr_import_3__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
   _push(`</div>`)
   _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Footer, null, null, _parent))
@@ -2223,32 +2231,143 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /components/navbar.vue?vue&type=style&index=0&lang.css ($id_96e91790)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_ccd51fbe = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-const _sfc_main = {}
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const _sfc_main = {}
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "overflow-x-hidden w-screen sticky top-0 bg-white z-50 sm:px-8 lg:px-0 xl:px-0 border border-b-2 border-gray-200" }, _attrs))}><div class="overflow-hidden w-full lg:w-10/12 xl:w-8/12 lg:mx-auto flex justify-between items-center"><div class="flex justify-between items-center space-x-4 md:space-x-8 lg:space-x-32"><a class="tracking-wide p-2 text-3xl font-extrabold text-jean hover:text-jean cursor-pointer transition-all duration-100" href="/">Helpers</a><nav class="space-x-1 lg:space-x-2"><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="/templates">Templates</a><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="#">Functionalities</a><a class="p-2 text-gray-500 hover:text-dark transition-all duration-200" href="/plugins">Plugins</a></nav></div><nav class="space-x-1 lg:space-x-2"><a class="text-gray-500 hover:text-dark transition-all duration-200 p-2" href="#">Register</a><a class="text-gray-500 transition-all duration-200 border border-1 px-4 py-2 rounded-lg font-semibold hover:bg-jean hover:text-white" href="#">Login</a></nav></div></div>`)
+  const _component_NuxtLink = __vite_ssr_import_1__.resolveComponent("NuxtLink")
+
+  _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "overflow-x-hidden w-screen sticky top-0 bg-white z-50 sm:px-8 lg:px-0 xl:px-0 border border-b-2 border-gray-200" }, _attrs))}><div class="overflow-hidden w-full lg:w-9/12 xl:w-7/12 md:w-11/12 md:mx-auto lg:mx-auto xl:mx-auto flex justify-between items-center"><div class="flex justify-between items-center space-x-4 md:space-x-8 lg:space-x-32">`)
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
+    class: "tracking-wide p-2 text-3xl font-extrabold text-jean hover:text-jean cursor-pointer transition-all duration-100",
+    to: "/"
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`Helpers`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createTextVNode("Helpers")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(`<nav class="space-x-1 lg:space-x-2">`)
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
+    class: "p-2 text-gray-500 hover:text-dark transition-all duration-200",
+    to: "/templates"
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`Templates`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createTextVNode("Templates")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
+    class: "p-2 text-gray-500 hover:text-dark transition-all duration-200",
+    to: " "
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`Functionalities`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createTextVNode("Functionalities")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
+    class: "p-2 text-gray-500 hover:text-dark transition-all duration-200",
+    to: "/plugins"
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`Plugins`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createTextVNode("Plugins")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(`</nav></div><nav class="space-x-1 lg:space-x-2">`)
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
+    class: "text-gray-500 hover:text-dark transition-all duration-200 p-2",
+    to: " "
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`Register`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createTextVNode("Register")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
+    class: "text-gray-500 transition-all duration-200 border border-1 px-4 py-2 rounded-lg font-semibold hover:bg-jean hover:text-white",
+    to: " "
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`Login`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createTextVNode("Login")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(`</nav></div></div>`)
 }
 
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/navbar.vue?vue&type=style&index=0&lang.css");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  const ssrContext = __vite_ssr_import_4__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/navbar.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/navbar.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/navbar.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/navbar.vue?vue&type=style&index=0&lang.css
+// Parents: 
+// - /components/navbar.vue ($id_ccd51fbe)
+// Dependencies: 
+
+// --------------------
+const $id_96e91790 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "\n.router-link-exact-active{\n    text-decoration: underline;\n}\n";
 }
 
 
@@ -2284,7 +2403,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_twitter_icon = __vite_ssr_import_2__.default
   const _component_facebook_icon = __vite_ssr_import_3__.default
 
-  _push(`<div${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({ class: "w-screen mt-4 bg-white px-4 sm:px-8 lg:px-0 xl:px-0 border-t-2 border-gray-200" }, _attrs))}><div class="w-full lg:w-10/12 xl:w-8/12 lg:mx-auto flex flex-col-reverse md:flex-row space-y-2 flex-wrap justify-center md:justify-between items-center border-b-2 border-gray-200"><nav class="my-4 flex space-x-1 lg:space-x-2"><a class="text-gray-500 hover:text-dark transition-all duration-200" href="#">`)
+  _push(`<div${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({ class: "w-screen mt-4 bg-white px-4 sm:px-8 lg:px-0 xl:px-0 border-t-2 border-gray-200" }, _attrs))}><div class="w-full lg:w-6/12 lg:mx-auto flex flex-col-reverse md:flex-row space-y-2 flex-wrap justify-center md:justify-between items-center border-b-2 border-gray-200"><nav class="my-4 flex space-x-1 lg:space-x-2"><a class="text-gray-500 hover:text-dark transition-all duration-200" href="#">`)
   _push(__vite_ssr_import_5__.ssrRenderComponent(_component_github_icon, null, null, _parent))
   _push(`</a><a class="text-gray-500 hover:text-dark transition-all duration-200" href="#">`)
   _push(__vite_ssr_import_5__.ssrRenderComponent(_component_instagram_icon, null, null, _parent))
@@ -2292,7 +2411,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   _push(__vite_ssr_import_5__.ssrRenderComponent(_component_twitter_icon, null, null, _parent))
   _push(`</a><a class="text-gray-500 hover:text-dark transition-all duration-200" href="#">`)
   _push(__vite_ssr_import_5__.ssrRenderComponent(_component_facebook_icon, null, null, _parent))
-  _push(`</a></nav><div class="flex justify-between items-center space-x-4 md:space-x-8 lg:space-x-32"><a class="tracking-wide p-2 text-5xl font-extrabold text-jean hover:text-jean cursor-pointer transition-all duration-100" href="/"> Helpers </a></div></div><div class="lg:w-10/12 xl:w-8/12 lg:mx-auto flex justify-between items-center"><div class="w-full flex justify-between items-center pb-2"><span class="text-sm text-slate-500">make by Anders</span><span class="text-sm text-slate-500">© 2021 Helpers</span></div></div></div>`)
+  _push(`</a></nav><div class="flex justify-between items-center space-x-4 md:space-x-8 lg:space-x-32"><a class="tracking-wide p-2 text-5xl font-extrabold text-jean hover:text-jean cursor-pointer transition-all duration-100" href="/"> Helpers </a></div></div><div class="lg:w-6/12 lg:mx-auto flex justify-between items-center"><div class="w-full flex justify-between items-center pb-2"><span class="text-sm text-slate-500">make by Anders</span><span class="text-sm text-slate-500">© 2021 Helpers</span></div></div></div>`)
 }
 
 
@@ -2532,6 +2651,8 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // - /node_modules/nuxt3/dist/pages/runtime/router.mjs ($id_a4d6cb5b)
 // Dependencies: 
 // - /pages/index.vue ($id_cca58e97)
+// - /pages/new_content.vue ($id_f76232be)
+// - /pages/pageview.vue ($id_1c4ee556)
 // - /pages/plugins/index.vue ($id_b9b13c0b)
 // - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
 // - /pages/templates/index.vue ($id_83001a7f)
@@ -2544,6 +2665,20 @@ __vite_ssr_exports__.default = [
     "file": "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/index.vue",
     "children": [],
     "component": () => __vite_ssr_dynamic_import__('/pages/index.vue')
+  },
+  {
+    "name": "new_content",
+    "path": "/new_content",
+    "file": "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/new_content.vue",
+    "children": [],
+    "component": () => __vite_ssr_dynamic_import__('/pages/new_content.vue')
+  },
+  {
+    "name": "pageview",
+    "path": "/pageview",
+    "file": "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/pageview.vue",
+    "children": [],
+    "component": () => __vite_ssr_dynamic_import__('/pages/pageview.vue')
   },
   {
     "name": "plugins",
@@ -2578,7 +2713,6 @@ __vite_ssr_exports__.default = [
 // - /components/header-index.vue ($id_265d4565)
 // - /components/services.vue ($id_0fea1836)
 // - /components/example.vue ($id_b9253967)
-// - /components/get-started.vue ($id_645fb6af)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
@@ -2587,40 +2721,37 @@ const $id_cca58e97 = async function (global, __vite_ssr_exports__, __vite_ssr_im
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/header-index.vue");
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/services.vue");
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/example.vue");
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/get-started.vue");
 
 const _sfc_main = {}
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_header_index = __vite_ssr_import_0__.default
   const _component_services = __vite_ssr_import_1__.default
   const _component_example = __vite_ssr_import_2__.default
-  const _component_get_started = __vite_ssr_import_3__.default
 
-  _push(`<!--[-->`)
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_header_index, { class: "mt-2 md:mt-16" }, null, _parent))
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_services, { class: "mt-2 md:mt-16" }, null, _parent))
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_example, { class: "mt-16" }, null, _parent))
-  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_get_started, { class: "my-8" }, null, _parent))
-  _push(`<!--]-->`)
+  _push(`<div${__vite_ssr_import_4__.ssrRenderAttrs(_attrs)}>`)
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_header_index, { class: "mt-2 md:mt-16" }, null, _parent))
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_services, { class: "mt-2 md:mt-16" }, null, _parent))
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_example, { class: "my-16" }, null, _parent))
+  _push(`<!-- <get-started class="my-8" /> --></div>`)
 }
 
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_6__.useSSRContext()
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/index.vue"]]);
 }
 
 
@@ -2769,7 +2900,7 @@ const __vite_ssr_import_5__ = await __vite_ssr_import__("/assets/images/rename.p
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_link = __vite_ssr_import_1__.resolveComponent("nuxt-link")
 
-  _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "w-full overflow-hidden space-y-8 md:space-y-0 p-4 md:p-0" }, _attrs))}><div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8"><div class="col md:col flex flex-col justify-center space-y-4 items-center text-center"><h1 class="text-3xl font-black text-dark">Template</h1><p class="text-gray-400 text-md p-2 md:px-16"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ab at cupiditate! Fuga autem consectetur placeat aspernatur sapiente magni, quisquam sint exercitationem aliquid velit facilis ex explicabo nulla? Alias necessitatibus totam quaerat iusto minus at sunt optio ab fugit tenetur. </p>`)
+  _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "w-full md:w-11/12 lg:w-10/12 lg:mx-auto md:mx-auto overflow-hidden space-y-16 p-4 md:p-0" }, _attrs))}><div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8"><div class="col md:col flex flex-col justify-center space-y-4 items-center text-center"><h1 class="text-3xl font-black text-dark">Template</h1><p class="text-gray-400 text-md p-2 md:px-16"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ab at cupiditate! Fuga autem consectetur placeat aspernatur sapiente magni, quisquam sint exercitationem aliquid velit facilis ex explicabo nulla? Alias necessitatibus totam quaerat iusto minus at sunt optio ab fugit tenetur. </p>`)
   _push(__vite_ssr_import_2__.ssrRenderComponent(_component_nuxt_link, {
     to: "/templates",
     class: "bg-jean flex cursor-pointer justify-evenly items-center px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95 transition-all duration-300"
@@ -2806,9 +2937,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   }, _parent))
   _push(`</div><div class="hidden md:col md:block"><img${
     __vite_ssr_import_2__.ssrRenderAttr("src", __vite_ssr_import_3__.default)
-  } alt="bureau.png" class="[clip-path:cicle(70%_at_20%_30%)]"></div></div><div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8"><div class="hidden md:col md:block"><img${
+  } alt="bureau.png" class="[clip-path:cicle(70%_at_20%_30%)]"></div></div><div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8"><div class="hidden md:col-span-1 md:block"><img${
     __vite_ssr_import_2__.ssrRenderAttr("src", __vite_ssr_import_4__.default)
-  } alt="bureau.png" class="[clip-path:cicle(70%_at_20%_30%)]"></div><div class="col md:col flex flex-col justify-center space-y-4 items-center text-center"><h1 class="text-3xl font-black text-dark">Plugins</h1><p class="text-gray-400 text-md p-2 md:px-16"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit nesciunt esse placeat culpa laboriosam molestias incidunt atque dolorum delectus distinctio, nostrum eum natus dolores officiis sequi quisquam hic modi, minima quod amet dicta quae! Minima quidem totam officia fuga! </p>`)
+  } alt="bureau.png" class="[clip-path:cicle(70%_at_20%_30%)]"></div><div class="col-span-1 flex flex-col justify-center space-y-4 items-center text-center"><h1 class="text-3xl font-black text-dark">Plugins</h1><p class="text-gray-400 text-md p-2 md:px-16"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit nesciunt esse placeat culpa laboriosam molestias incidunt atque dolorum delectus distinctio, nostrum eum natus dolores officiis sequi quisquam hic modi, minima quod amet dicta quae! Minima quidem totam officia fuga! </p>`)
   _push(__vite_ssr_import_2__.ssrRenderComponent(_component_nuxt_link, {
     to: "#",
     class: "bg-jean flex cursor-pointer justify-evenly items-center px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95 transition-all duration-300"
@@ -2933,811 +3064,11 @@ __vite_ssr_exports__.default = "/_nuxt/assets/images/rename.png";
 
 
 // --------------------
-// Request: /components/get-started.vue
-// Parents: 
-// - /pages/index.vue ($id_cca58e97)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_645fb6af = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "p-8 md:p-0 w-full overflow-hidden" }, _attrs))}><div class="flex justify-end items-end text-center"><a href="#" class="bg-jean flex cursor-pointer justify-evenly items-center px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95 transition-all duration-300"><span>Get started</span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-white ml-4" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a></div></div>`)
-}
-
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/get-started.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/get-started.vue"]]);
-}
-
-
-// --------------------
-// Request: /pages/plugins/index.vue
+// Request: /pages/new_content.vue
 // Parents: 
 // - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/routes.mjs ($id_2bd3b053)
 // Dependencies: 
-// - /node_modules/nuxt3/dist/meta/runtime/index.mjs ($id_ea12a3fb)
-// - /components/Menu.vue ($id_b1d32007)
-// - /components/contents-sections.vue ($id_0b3ec488)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_b9b13c0b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/Menu.vue");
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-sections.vue");
-
-
-    const _sfc_main = {
-         setup () {
-            __vite_ssr_import_0__.useMeta({
-                htmlAttrs: {
-                    class: 'scroll-smooth'
-                }
-            })
-        },
-        data: () =>({
-            categories:[
-                {
-                    title: 'Marketing',
-                    description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
-                        {
-                            title:'pages content',
-                            items:[
-                                {
-                                    id:1,
-                                    image:'assets/images/bureau.png',
-                                    title:'hero sections',
-                                    items:[
-                                        {
-                                            id: 1,
-                                            title:"classic hero",
-                                            content: `
-                                                    <template>
-                                                    <div class="w-full  h-[50vh]">
-                                                        <div class="w-full h-full flex justify-around items-center">
-                                                            <div class="w-full p-2 md:p-0 md:2/5  flex justify-center items-center text-center flex-col space-y-6 ">
-                                                                <h1 class="text-dark text-5xl tracking-wide font-black">
-                                                                    Code quickly and reliably with <span class="text-jean">Helpers</span>.
-                                                                </h1>
-                                                                <p class="text-lg text-gray-500">
-                                                                    Create a project and help you with our various tools and templates.
-                                                                </p>
-                                                                <a href="#"
-                                                                    class="border-2 border-gray-200 w-2/3 block cursor-pointer   px-8 py-4 text-dark rounded-lg font-semibold tracking-wider shadow-sm hover:border-transparent hover:text-white hover:bg-jean hover:shadow-jean/30  transition-all duration-300">
-                                                                    See our latest creation
-                                                                </a>
-
-                                                                <a href="#"
-                                                                    class="bg-jean w-2/3 block cursor-pointer  px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95  transition-all duration-300 ">
-                                                                    Get started
-                                                                </a>
-                                                            </div>
-                                                            <div class="hidden md:flex w-3/5  justify-center items-center flex-col space-y-6 bg-slate-400">
-                                                                <img src="@/assets/images/header-bg.jpg" alt="header-bg.jpg" >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </template>
-                                            `
-                                        },
-                                    ]
-                                },
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:3,
-                                    image:'assets/images/ajust.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                                {
-                                    id:4,
-                                    image:'assets/images/header-1.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        },
-                        {
-                            title:'Feedback',
-                            items:[
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                
-                            ]
-                        },
-                        {
-                            title:'Elements',
-                            items:[
-                                {
-                                    id:4,
-                                    image:'assets/images/header-1.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        },
-                        {
-                            title:'pages Exemples',
-                            items:[
-                                {
-                                    id:1,
-                                    image:'assets/images/bureau.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:3,
-                                    image:'assets/images/ajust.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                                {
-                                    id:4,
-                                    image:'assets/images/header-1.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        }
-                    ]
-                },
-                {
-                    title: 'Application',
-                    description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
-                        {
-                            title:'Feedback',
-                            items:[
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                
-                            ]
-                        },
-                        {
-                            title:'pages Exemples',
-                            items:[
-                                {
-                                    id:1,
-                                    image:'assets/images/bureau.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        },
-                        {
-                            title:'Elements',
-                            items:[
-                                {
-                                    id:4,
-                                    image:'assets/images/header-1.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        },
-                    ]
-                },
-                {
-                    title: 'Ecommerce',
-                    description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
-                        {
-                            title:'pages content',
-                            items:[
-                                {
-                                    id:1,
-                                    image:'assets/images/bureau.png',
-                                    title:'hero section',
-                                    items:[
-                                        {
-                                            id: 1,
-                                            title:"classic hero",
-                                            content: `
-                                                    <template>
-                                                    <div class="w-full  h-[50vh]">
-                                                        <div class="w-full h-full flex justify-around items-center">
-                                                            <div class="w-full p-2 md:p-0 md:2/5  flex justify-center items-center text-center flex-col space-y-6 ">
-                                                                <h1 class="text-dark text-5xl tracking-wide font-black">
-                                                                    Code quickly and reliably with <span class="text-jean">Helpers</span>.
-                                                                </h1>
-                                                                <p class="text-lg text-gray-500">
-                                                                    Create a project and help you with our various tools and templates.
-                                                                </p>
-                                                                <a href="#"
-                                                                    class="border-2 border-gray-200 w-2/3 block cursor-pointer   px-8 py-4 text-dark rounded-lg font-semibold tracking-wider shadow-sm hover:border-transparent hover:text-white hover:bg-jean hover:shadow-jean/30  transition-all duration-300">
-                                                                    See our latest creation
-                                                                </a>
-
-                                                                <a href="#"
-                                                                    class="bg-jean w-2/3 block cursor-pointer  px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95  transition-all duration-300 ">
-                                                                    Get started
-                                                                </a>
-                                                            </div>
-                                                            <div class="hidden md:flex w-3/5  justify-center items-center flex-col space-y-6 bg-slate-400">
-                                                                <img src="@/assets/images/header-bg.jpg" alt="header-bg.jpg" >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </template>
-                                            `
-                                        },
-                                    ]
-                                },
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:3,
-                                    image:'assets/images/ajust.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                                {
-                                    id:4,
-                                    image:'assets/images/header-1.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        },
-                        {
-                            title:'Feedback',
-                            items:[
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                
-                            ]
-                        },
-                        {
-                            title:'Elements',
-                            items:[
-                                {
-                                    id:4,
-                                    image:'assets/images/header-1.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        },
-                        {
-                            title:'pages Exemples',
-                            items:[
-                                {
-                                    id:1,
-                                    image:'assets/images/bureau.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:2,
-                                    image:'assets/images/bureau1.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:3,
-                                    image:'assets/images/ajust.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                                {
-                                    id:4,
-                                    image:'assets/images/header-1.png',
-                                    title:'hero section',
-                                    items:[]
-                                },
-                                {
-                                    id:5,
-                                    image:'assets/images/header-2.png',
-                                    title:'features section',
-                                    items:[]
-                                },
-                                {
-                                    id:6,
-                                    image:'assets/images/rename.png',
-                                    title:'CTA section',
-                                    items:[]
-                                },
-                            ]
-                        }
-                    ]
-                },
-            ]
-        })
-    }
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Menu = __vite_ssr_import_1__.default
-  const _component_contents_sections = __vite_ssr_import_2__.default
-
-  _push(`<div${__vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({ class: "w-full" }, _attrs))}>`)
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_Menu, null, null, _parent))
-  _push(`<!--[-->`)
-  __vite_ssr_import_4__.ssrRenderList(_ctx.categories, (contentSection) => {
-    _push(__vite_ssr_import_4__.ssrRenderComponent(_component_contents_sections, {
-      key: contentSection.title,
-      contentSection: contentSection
-    }, null, _parent))
-  })
-  _push(`<!--]--></div>`)
-}
-
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_5__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/plugins/index.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/plugins/index.vue"]]);
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt3/dist/meta/runtime/index.mjs
-// Parents: 
-// - /pages/plugins/index.vue ($id_b9b13c0b)
-// - /pages/templates/index.vue ($id_83001a7f)
-// Dependencies: 
-// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
-// --------------------
-const $id_ea12a3fb = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/composables.mjs");
-__vite_ssr_exportAll__(__vite_ssr_import_0__);
-;
-}
-
-
-// --------------------
-// Request: /components/Menu.vue
-// Parents: 
-// - /pages/plugins/index.vue ($id_b9b13c0b)
-// - /pages/templates/index.vue ($id_83001a7f)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_b1d32007 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "overflow-hidden w-full sticky top-0 bg-white z-50 flex justify-between items-center md:w-full md:mr-auto my-4 border-b-2 border-gray-200 p-2" }, _attrs))}><div class="flex justify-start items-center space-x-1 md:space-x-4"><h1 class="hidden p-2 lg:py-2 lg:px-4 md:inline-block font-bold tracking-wide text-dark">Templates &gt;</h1><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Marketing">Marketing</a><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Application">Application</a><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200" href="#Ecommerce">Ecommerce</a></div><div class="flex justify-end items-center space-x-2 md:space-x-4"><h1 class="hidden py-2 px-4 lg:inline-block font-bold tracking-wide text-dark">Options &gt;</h1><button class="cursor-pointer text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-gray-500 shadow-sm border-gray-200 border-2 hover:ring-1 hover:ring-dark hover:scale-95 transition-all duration-200">Add section</button><button class="cursor-pointer text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-red-900 hover:ring-1 hover:ring-red-600 hover:scale-95 bg-red-100 shadow-lg shadow-red-100/30 transition-all duration-200">Remove section</button></div></div>`)
-}
-
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Menu.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Menu.vue"]]);
-}
-
-
-// --------------------
-// Request: /components/contents-sections.vue
-// Parents: 
-// - /pages/plugins/index.vue ($id_b9b13c0b)
-// - /pages/templates/index.vue ($id_83001a7f)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /components/Section.vue ($id_5ff493dc)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_0b3ec488 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/Section.vue");
-
-
-const _sfc_main = {
-    props:{
-        contentSection:{
-            type:Object,
-            required:true,
-        },
-    }
-}
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Section = __vite_ssr_import_0__.default
-
-  _push(`<div${
-    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
-      id: $props.contentSection.title.replace(' ',''),
-      class: "w-full my-16 p-4"
-    }, _attrs))
-  }><div class="border-b-2 border-gray-200"><h1 class="text-xl font-bold text-dark capitalize">${
-    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.title)
-  }</h1><p class="text-gray-400 text-sm mt-2">${
-    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.description)
-  }</p></div><!--[-->`)
-  __vite_ssr_import_2__.ssrRenderList($props.contentSection.subCategories, (section) => {
-    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Section, {
-      key: section.title,
-      section: section
-    }, null, _parent))
-  })
-  _push(`<!--]--></div>`)
-}
-
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/contents-sections.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/contents-sections.vue"]]);
-}
-
-
-// --------------------
-// Request: /components/Section.vue
-// Parents: 
-// - /components/contents-sections.vue ($id_0b3ec488)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /components/card.vue ($id_d9dfd282)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_5ff493dc = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/card.vue");
-
-
-const _sfc_main = {
-    props:{
-        section:{
-            type:Object,
-            required:true
-        }
-    }
-}
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_card = __vite_ssr_import_0__.default
-
-  _push(`<div${
-    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
-      id: $props.section.title.replace(' ',''),
-      class: "my-4 grid gap-x-8 gap-y-6 grid-cols-3 lg:grid-cols-4 py-8 border-b-2 border-gray-200"
-    }, _attrs))
-  }><h1 class="col-span-3 md:col-span-1 md:row-span-full text-md font-bold text-dark">${
-    __vite_ssr_import_2__.ssrInterpolate($props.section.title)
-  }</h1><div class="col-span-3 grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-y-8 lg:gap-x-8"><!--[-->`)
-  __vite_ssr_import_2__.ssrRenderList($props.section.items, (card) => {
-    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_card, {
-      key: card.id,
-      card: card,
-      section: $props.section
-    }, null, _parent))
-  })
-  _push(`<!--]--></div></div>`)
-}
-
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Section.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Section.vue"]]);
-}
-
-
-// --------------------
-// Request: /components/card.vue
-// Parents: 
-// - /components/Section.vue ($id_5ff493dc)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_d9dfd282 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-
-const _sfc_main = {
-    props:{
-        card:{
-            type:Object,
-            required:true
-        },
-        section:{
-            type:Object,
-            required:true
-        }
-    }
-}
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<a${
-    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-      class: "group rounded-lg ring-1 ring-black ring-opacity-5",
-      href: '/templates/'+$props.section.title+'/'+$props.section.title+'-'+$props.card.title
-    }, _attrs))
-  }><div class="aspect-h-1 aspect-w-2 rounded-lg"><img class="object-cover rounded-t-lg contrast-100"${
-    __vite_ssr_import_1__.ssrRenderAttr("src", $props.card.image)
-  }${
-    __vite_ssr_import_1__.ssrRenderAttr("alt", $props.card.image)
-  }></div><div class="flex justify-center flex-col items-start p-2"><h2 class="text-dark tracking-wide font-bold text-sm capitalize">${
-    __vite_ssr_import_1__.ssrInterpolate($props.card.title)
-  }</h2><p class="text-gray-400 text-sm"><span class="text-dark tracking-wide font-bold">${
-    __vite_ssr_import_1__.ssrInterpolate($props.card.items.length)
-  }</span>`)
-  if ($props.card.items.length >1) {
-    _push(`<span> elements.</span>`)
-  } else {
-    _push(`<span> element.</span>`)
-  }
-  _push(`</p></div></a>`)
-}
-
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/card.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/card.vue"]]);
-}
-
-
-// --------------------
-// Request: /pages/templates/[group]/[section]-[id].vue
-// Parents: 
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/routes.mjs ($id_2bd3b053)
-// Dependencies: 
-// - /components/content.vue ($id_3032adb6)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_42acd7e4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/content.vue");
-
-
-const _sfc_main = {
-
-}
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_content = __vite_ssr_import_0__.default
-
-  _push(`<div${
-    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "w-full my-16 space-y-1" }, _attrs))
-  }><div class="text-gray-400 text-sm"><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-400 font-bold hover:text-dark transition-all duration-200"${
-    __vite_ssr_import_2__.ssrRenderAttr("href", '/templates#'+_ctx.$route.params.group)
-  }>${
-    __vite_ssr_import_2__.ssrInterpolate(_ctx.$route.params.group)
-  }</a> &gt; <a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-400 font-bold hover:text-dark transition-all duration-200"${
-    __vite_ssr_import_2__.ssrRenderAttr("href", '/templates#'+_ctx.$route.params.section.toString().replace(' ',''))
-  }>${
-    __vite_ssr_import_2__.ssrInterpolate(_ctx.$route.params.section.toString())
-  }</a></div><h1 class="hidden p-2 lg:py-2 lg:px-4 md:inline-block text-2xl font-black tracking-wide text-dark capitalize">${
-    __vite_ssr_import_2__.ssrInterpolate(_ctx.$route.params.id)
-  }</h1>`)
-  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_content, null, null, _parent))
-  _push(`</div>`)
-}
-
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/templates/[group]/[section]-[id].vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/templates/[group]/[section]-[id].vue"]]);
-}
-
-
-// --------------------
-// Request: /components/content.vue
-// Parents: 
-// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
-// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
-// Dependencies: 
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-prism-editor/dist/prismeditor.esm.js ($id_e506e72f)
 // - /node_modules/vue-prism-editor/dist/prismeditor.min.css ($id_209a256d)
@@ -3746,147 +3077,123 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_m
 // - /node_modules/prismjs/components/prism-javascript.js ($id_bdb60b25)
 // - /assets/css/prism-editor.css ($id_6c6c3065)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /components/content.vue?vue&type=style&index=0&scoped=true&lang.css ($id_8fdbd1fd)
+// - /pages/new_content.vue?vue&type=style&index=0&scoped=true&lang.css ($id_0094ae0f)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_3032adb6 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const $id_f76232be = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue-prism-editor/dist/prismeditor.esm.js");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue-prism-editor/dist/prismeditor.esm.js");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue-prism-editor/dist/prismeditor.min.css");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue-prism-editor/dist/prismeditor.min.css");
  
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/prismjs/prism.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/prismjs/prism.js");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/prismjs/components/prism-clike.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/prismjs/components/prism-clike.js");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/prismjs/components/prism-javascript.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/prismjs/components/prism-javascript.js");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/assets/css/prism-editor.css");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/assets/css/prism-editor.css");
 
-const _sfc_main = {
+
+const __default__ = {
     data: () => ({
-        code: 'console.log("Hello World")',
+        code: '<h1 class="text-4xl text-center text-black font-black">new content</h1>',
         state:'preview',
-        isCopy:false,
-        item: {
-            id: 1,
-            title: "classic hero",
-            content: `
-            <div class="w-full  h-[50vh]">
-                <div class="w-full h-full flex justify-evenly items-center">
-                    <div
-                        class="w-full p-2 md:p-0 md:w-2/5 flex justify-center items-center text-center flex-col space-y-6 ">
-                        <h1 class="text-dark text-5xl tracking-wide font-black">
-                            Code quickly and reliably with <span class="text-jean">Helpers</span>.
-                        </h1>
-                        <p class="text-lg text-gray-500">
-                            Create a project and help you with our various tools and templates.
-                        </p>
-                        <a href="#"
-                            class="bg-jean/10 text-jean  w-2/3 block cursor-pointer   px-8 py-4 rounded-lg font-semibold tracking-wider shadow-sm hover:border-transparent hover:text-white hover:bg-jean hover:shadow-jean/30  transition-all duration-300">
-                            See our latest creation
-                        </a>
-
-                        <nuxt-link to="/templates"
-                            class="bg-jean w-2/3 block cursor-pointer  px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95  transition-all duration-300 ">
-                            Get started
-                        </nuxt-link>
-                    </div>
-                    <div class="hidden md:flex md:w-3/5  justify-center items-center flex-col space-y-6">
-                        <img src="https://cdn0.iconfinder.com/data/icons/azure-illustrations/1000/settings___preferences_options_dial_configuration_configure_man-2048.png" alt="header-bg.jpg">
-                    </div>
-                </div>
-            </div>
-              `
-        },
+        departements:[],
+        departement:'',
     }),
-    methods:{
-         copy() {
 
-             this.isCopy=true
-             var vm = this
-             setTimeout(()=>{
-                vm.isCopy=false
-             },2000)
-            var copy= document.createElement("textarea")
-            copy.value = this.$refs.editor.$el.outerHTML
-            document.body.appendChild(copy)
-            copy.focus()
-            copy.select()
-            document.execCommand("copy")
-            document.body.removeChild(copy)
-        },
+    methods:{
         highlighter(code) {
-            return __vite_ssr_import_3__.default.highlight(code, __vite_ssr_import_3__.default.languages.html, "html"); // languages.<insert language> to return html with markup
+            return __vite_ssr_import_5__.default.highlight(code, __vite_ssr_import_5__.default.languages.html, 'html'); // languages.<insert language> to return html with markup
         },
+        
     },
-      components: {
-    PrismEditor: __vite_ssr_import_1__.PrismEditor
-  },
+
+    components: {
+        PrismEditor: __vite_ssr_import_3__.PrismEditor
+    },
 }
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const _sfc_main = /*#__PURE__*/Object.assign(__default__, {
+  async setup(__props, { expose }) {
+  expose();
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+let __temp, __restore
+
+    const {data} =  (
+  ([__temp,__restore] = __vite_ssr_import_2__.withAsyncContext(() => __vite_ssr_import_0__.useFetch('/api/departements',{ pick: ['id','title','categories'],params: {search: 106} }))),
+  __temp = await __temp,
+  __restore(),
+  __temp
+)
+    //this.departements = data.value
+
+const __returned__ = { data, PrismEditor: __vite_ssr_import_3__.PrismEditor, Prism: __vite_ssr_import_5__.default }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+})
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_prism_editor = __vite_ssr_import_7__.resolveComponent("prism-editor")
-
-  _push(`<div${
-    __vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "w-full px-2 space-y-16" }, _attrs))
-  } data-v-7a4a808e><div class="flex justify-between items-center" data-v-7a4a808e><h1 class="text-sm font-bold text-gray-500 uppercase" data-v-7a4a808e>Lorem ipsum dolor sit.</h1><nav class="flex justify-between items-center space-x-2" data-v-7a4a808e><button class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
-    __vite_ssr_import_8__.ssrRenderClass([_ctx.state ==='preview' ? 'stroke-jean' : 'stroke-slate-600', "h-5 w-5"])
-  }" fill="none" viewBox="0 0 24 24" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" data-v-7a4a808e></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" data-v-7a4a808e></path></svg><span data-v-7a4a808e>preview</span></button><button class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
-    __vite_ssr_import_8__.ssrRenderClass([_ctx.state ==='code' ? 'stroke-jean' : 'stroke-slate-600', "h-5 w-5 fill-white"])
-  }" viewBox="0 0 24 24" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" data-v-7a4a808e></path></svg><span data-v-7a4a808e>code</span></button><button class="text-sm font-medium relative text-gray-600 flex items-center rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-100" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
-    __vite_ssr_import_8__.ssrRenderClass([_ctx.isCopy ? 'stroke-jean  -rotate-[8deg]' : 'stroke-slate-600', "h-6 w-6"])
-  }" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" data-v-7a4a808e></path></svg>`)
-  if (_ctx.isCopy) {
-    _push(`<span class="absolute inset-x-0 bottom-full mb-2.5 flex justify-center" data-v-7a4a808e><span class="bg-gray-900 text-white rounded-md text-[0.625rem] leading-4 tracking-wide font-semibold uppercase py-1 px-3 filter drop-shadow-md" data-v-7a4a808e><svg aria-hidden="true" width="16" height="6" viewBox="0 0 16 6" class="text-gray-900 absolute top-full left-1/2 -mt-px -ml-2" data-v-7a4a808e><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1V1.00366V1.00366V1.00371H1.01672C2.72058 1.0147 4.24225 2.74704 5.42685 4.72928C6.42941 6.40691 9.57154 6.4069 10.5741 4.72926C11.7587 2.74703 13.2803 1.0147 14.9841 1.00371H15V0Z" fill="currentColor" data-v-7a4a808e></path></svg> Copied! </span></span>`)
+  _push(`<div${__vite_ssr_import_10__.ssrRenderAttrs(__vite_ssr_import_9__.mergeProps({ class: "p-4 my-16 w-full flex flex-col justify-center" }, _attrs))} data-v-c28e301e><div class="flex justify-between items-center" data-v-c28e301e><h1 class="text-4xl text-center tracking-wide text-black font-black" data-v-c28e301e> create new content. </h1><a href="#" class="bg-jean/20 md:w-auto flex cursor-pointer justify-center items-center space-x-2 px-4 py-2 md:px-6 md:py-4 text-jean rounded-lg font-bold tracking-wider shadow-lg shadow-jean/10 hover:scale-95 hover:ring-1 hover:ring-jean transition-all duration-300" data-v-c28e301e><svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-c28e301e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" data-v-c28e301e></path></svg><span class="text-center hidden md:block" data-v-c28e301e>Create</span></a></div><div class="mt-8" data-v-c28e301e><form data-v-c28e301e><div class="flex flex-col justify-center space-y-8" data-v-c28e301e><div class="col-span-3 grid grid-cols-3 gap-y-4 md:gap-x-4 md:gap-y-0" data-v-c28e301e><div class="col-span-3 md:col-span-1 flex flex-col justify-center space-y-2" data-v-c28e301e><label class="underline decoration-red-900/30 decoration-wavy font-bold text-sm capitalize text-gray-400" data-v-c28e301e>choose the departement of your content.</label>`)
+  if (_ctx.departements && _ctx.departements.length>0) {
+    _push(`<select class="border-gray-200 text-lg rounded-lg text-dark font-medium" data-v-c28e301e><option disabled data-v-c28e301e>Please select one</option><!--[-->`)
+    __vite_ssr_import_10__.ssrRenderList(_ctx.departements, (option) => {
+      _push(`<option${
+        __vite_ssr_import_10__.ssrRenderAttr("value", option.id)
+      } data-v-c28e301e>${
+        __vite_ssr_import_10__.ssrInterpolate(option.title)
+      }</option>`)
+    })
+    _push(`<!--]--></select>`)
   } else {
-    _push(`<!---->`)
+    _push(`<select id="" class="border-gray-200 text-lg rounded-lg text-dark font-medium" data-v-c28e301e><option value="Marketing" data-v-c28e301e>Marketing</option><option value="Application" data-v-c28e301e>Application UI</option><option value="Ecommerce" data-v-c28e301e>Ecommerce</option></select>`)
   }
-  _push(`</button></nav></div>`)
-  if (_ctx.state=='preview') {
-    _push(`<div class="mt-4" data-v-7a4a808e><div data-v-7a4a808e>${_ctx.item.content}</div></div>`)
-  } else {
-    _push(`<!---->`)
-  }
-  _push(`<div style="${__vite_ssr_import_8__.ssrRenderStyle((_ctx.state=='code') ? null : { display: "none" })}" class="rounded-lg mt-4" data-v-7a4a808e>`)
-  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_prism_editor, {
+  _push(`</div><div class="col-span-3 md:col-span-2 flex flex-col justify-center space-y-2" data-v-c28e301e><label class="underline decoration-green-900/30 decoration-wavy font-bold text-sm capitalize text-gray-400" data-v-c28e301e>Title of your content.</label><input type="text" id="title" class="rounded-lg border-gray-200 text-lg placeholder:text-gray-400 placeholder:italic" placeholder="Title of your content..." data-v-c28e301e></div></div><div class="grid grid-cols-3 gap-y-4 md:gap-y-0 md:gap-x-4" data-v-c28e301e><div class="col-span-3 sm:col-span-1 flex flex-col justify-center space-y-2" data-v-c28e301e><label class="underline decoration-jean/30 decoration-wavy font-bold text-sm capitalize text-gray-400" data-v-c28e301e>choose the category.</label><select id="" class="border-gray-200 text-lg rounded-lg text-dark font-medium" data-v-c28e301e><option value="Marketing" data-v-c28e301e>Marketing</option><option value="Application" data-v-c28e301e>Application UI</option><option value="Ecommerce" data-v-c28e301e>Ecommerce</option></select></div><div class="col-span-3 sm:col-span-1 flex flex-col justify-center space-y-2" data-v-c28e301e><label class="underline decoration-red-900/30 decoration-wavy font-bold text-sm capitalize text-gray-400" data-v-c28e301e>choose the sub-category content.</label><select id="" class="border-gray-200 text-lg rounded-lg text-dark font-medium" data-v-c28e301e><option value="Pagecontent" data-v-c28e301e>Page content</option><option value="Feedback" data-v-c28e301e>Feedback</option><option value="Elements" data-v-c28e301e>Elements</option></select></div><div class="col-span-3 sm:col-span-1 flex flex-col justify-center space-y-2" data-v-c28e301e><label class="underline decoration-indigo-900/30 decoration-wavy font-bold text-sm capitalize text-gray-400" data-v-c28e301e>choose the block content.</label><select id="" class="border-gray-200 text-lg rounded-lg text-dark font-medium" data-v-c28e301e><option value="Hero section" data-v-c28e301e>Hero section</option><option value="Feature section" data-v-c28e301e>Feature section</option><option value="CTA section" data-v-c28e301e>CTA section</option></select></div></div></div></form></div><div class="rounded-lg mt-4 col-span-1 h-full space-y-4" data-v-c28e301e><label class="underline decoration-indigo-900/30 decoration-wavy font-bold text-sm capitalize text-gray-400" data-v-c28e301e>paste your code here </label>`)
+  _push(__vite_ssr_import_10__.ssrRenderComponent($setup["PrismEditor"], {
     ref: "editor",
     class: "my-editor bg-bleuTherne overflow-scroll rounded-lg",
-    modelValue: _ctx.item.content,
-    "onUpdate:modelValue": $event => ((_ctx.item.content) = $event),
-    readonly: "",
-    highlight: $options.highlighter
+    modelValue: _ctx.code,
+    "onUpdate:modelValue": $event => ((_ctx.code) = $event),
+    highlight: $options.highlighter,
+    tabSize: 4
   }, null, _parent))
   _push(`</div></div>`)
 }
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/components/content.vue?vue&type=style&index=0&scoped=true&lang.css");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/pages/new_content.vue?vue&type=style&index=0&scoped=true&lang.css");
 
 
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_10__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/content.vue")
+  const ssrContext = __vite_ssr_import_12__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/new_content.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-7a4a808e"],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/content.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-c28e301e"],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/new_content.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/vue-prism-editor/dist/prismeditor.esm.js
 // Parents: 
+// - /pages/new_content.vue ($id_f76232be)
 // - /components/content.vue ($id_3032adb6)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4450,6 +3757,7 @@ Object.defineProperty(__vite_ssr_exports__, "PrismEditor", { enumerable: true, c
 // --------------------
 // Request: /node_modules/vue-prism-editor/dist/prismeditor.min.css
 // Parents: 
+// - /pages/new_content.vue ($id_f76232be)
 // - /components/content.vue ($id_3032adb6)
 // Dependencies: 
 
@@ -4462,6 +3770,7 @@ __vite_ssr_exports__.default = ".prism-editor-wrapper{width:100%;height:100%;dis
 // --------------------
 // Request: /node_modules/prismjs/prism.js
 // Parents: 
+// - /pages/new_content.vue ($id_f76232be)
 // - /components/content.vue ($id_3032adb6)
 // Dependencies: 
 
@@ -4472,6 +3781,7 @@ const $id_e07646f6 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // --------------------
 // Request: /node_modules/prismjs/components/prism-clike.js
 // Parents: 
+// - /pages/new_content.vue ($id_f76232be)
 // - /components/content.vue ($id_3032adb6)
 // Dependencies: 
 
@@ -4482,6 +3792,7 @@ const $id_b75c5470 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // --------------------
 // Request: /node_modules/prismjs/components/prism-javascript.js
 // Parents: 
+// - /pages/new_content.vue ($id_f76232be)
 // - /components/content.vue ($id_3032adb6)
 // Dependencies: 
 
@@ -4492,29 +3803,96 @@ const $id_bdb60b25 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // --------------------
 // Request: /assets/css/prism-editor.css
 // Parents: 
+// - /pages/new_content.vue ($id_f76232be)
 // - /components/content.vue ($id_3032adb6)
 // Dependencies: 
 
 // --------------------
 const $id_6c6c3065 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n\n @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');\n/**\n * atom-dark theme for `prism.js`\n * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax\n * @author Joe Gibson (@gibsjose)\n */\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tcolor: #c5c8c6;\n\ttext-shadow: 0 1px #1F2937;\n\tfont-family: 'Fira Code',Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;\n\tdirection: ltr;\n\ttext-align: left;\n\twhite-space: pre;\n\tword-spacing: normal;\n\tword-break: normal;\n\tline-height: 1.5;\n\n\t-moz-tab-size: 4;\n\t-o-tab-size: 4;\n\ttab-size: 4;\n\n\t-webkit-hyphens: none;\n\t-ms-hyphens: none;\n\thyphens: none;\n}\n/* Code blocks */\npre[class*=\"language-\"] {\n\tpadding:.5em  1em;\n\tmargin: .5em 0;\n\toverflow-x: scroll;\n\toverflow-y: scroll;\n\tborder-radius: 0.3em;\n}\n:not(pre) > code[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tbackground: #1F2937;\n}\n/* Inline code */\n:not(pre) > code[class*=\"language-\"] {\n\tpadding: .1em;\n\tborder-radius: .3em;\n}\n.token.comment,\n.token.prolog,\n.token.doctype,\n.token.cdata {\n\tcolor: #4D5663;\n}\n.token.punctuation {\n\tcolor: #A8D1E7;\n}\n.namespace {\n\topacity: .7;\n}\n.token.property,\n.token.keyword,\n.token.tag {\n\tcolor: #e56fff;\n}\n.token.class-name {\n\tcolor: #219CB2;\n\ttext-decoration: underline;\n}\n.token.boolean,\n.token.constant {\n\tcolor: #99CC99;\n}\n.token.symbol,\n.token.deleted {\n\tcolor: #f92672;\n}\n.token.number {\n\tcolor: #FF73FD;\n}\n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n\tcolor: #21C9E3;\n}\n.token.variable {\n\tcolor: #C6C5FE;\n}\n.token.operator {\n\tcolor: #EDEDED;\n}\n.token.entity {\n\tcolor: #FFFFB6;\n\tcursor: help;\n}\n.token.url {\n\tcolor: #96CBFE;\n}\n.language-css .token.string,\n.style .token.string {\n\tcolor: #87C38A;\n}\n.token.atrule,\n.token.attr-value {\n\tcolor: #96BF58;\n}\n.token.function {\n\tcolor: #DAD085;\n}\n.token.regex {\n\tcolor: #E9C062;\n}\n.token.important {\n\tcolor: #fd971f;\n}\n.token.important,\n.token.bold {\n\tfont-weight: bold;\n}\n.token.italic {\n\tfont-style: italic;\n}";
+__vite_ssr_exports__.default = "/**\n * atom-dark theme for `prism.js`\n * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax\n * @author Joe Gibson (@gibsjose)\n */\n\n \ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tcolor: #c5c8c6;\n\ttext-shadow: 0 1px #1F2937;\n\tfont-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;\n\tdirection: ltr;\n\ttext-align: left;\n\twhite-space: pre;\n\tword-spacing: normal;\n\tword-break: normal;\n\tline-height: 1.5;\n\n\t-moz-tab-size: 4;\n\t-o-tab-size: 4;\n\ttab-size: 4;\n\n\t-webkit-hyphens: none;\n\t-ms-hyphens: none;\n\thyphens: none;\n}\n\n \n/* Code blocks */\n\n \npre[class*=\"language-\"] {\n\tpadding:0.5rem;\n\tmargin: 0;\n\toverflow-x: scroll;\n\toverflow-y: scroll;\n\tborder-radius: 0.3em;\n}\n\n \n:not(pre) > code[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tbackground: #1f2937;\n\toverflow:auto;\n}\n\n \n/* Inline code */\n\n \n:not(pre) > code[class*=\"language-\"] {\n\tpadding: .1em;\n\tborder-radius: .3em;\n}\n\n \n.token.comment,\n.token.prolog,\n.token.doctype,\n.token.cdata {\n\tcolor: #4D5663;\n}\n\n \n.token.script{\n\tcolor: #B866CB;\n}\n\n \n.token.punctuation {\n\tcolor: #A8D1E7;\n}\n\n \n.namespace {\n\topacity: .7;\n}\n\n \n.token.property,\n.token.keyword,\n.token.tag {\n\tcolor: #B866CB;\n}\n\n \n.token.class-name {\n\tcolor: #219CB2;\n\ttext-decoration: underline;\n}\n\n \n.token.boolean,\n.token.constant {\n\tcolor: #99CC99;\n}\n\n \n.token.symbol,\n.token.deleted {\n\tcolor: #f92672;\n}\n\n \n.token.number {\n\tcolor: #FF73FD;\n}\n\n \n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n\tcolor: #21C9E3;\n}\n\n \n.token.variable {\n\tcolor: #C6C5FE;\n}\n\n \n.token.operator {\n\tcolor: #EDEDED;\n}\n\n \n.token.entity {\n\tcolor: #FFFFB6;\n\tcursor: help;\n}\n\n \n.token.url {\n\tcolor: #96CBFE;\n}\n\n \n.language-css .token.string,\n.style .token.string {\n\tcolor: #87C38A;\n}\n\n \n.token.atrule,\n.token.attr-value {\n\tcolor: #96BF58;\n}\n\n \n.token.function {\n\tcolor: #B866CB;\n}\n\n \n.token.regex {\n\tcolor: #E9C062;\n}\n\n \n.token.important {\n\tcolor: #fd971f;\n}\n\n \n.token.important,\n.token.bold {\n\tfont-weight: bold;\n}\n\n \n.token.italic {\n\tfont-style: italic;\n}\n\n \npre[class*=\"language-\"].line-numbers {\n  position: relative;\n  padding-left: 3.8em;\n  counter-reset: linenumber;\n}\n\n \npre[class*=\"language-\"].line-numbers > code {\n  position: relative;\n  white-space: inherit;\n}\n\n \n.line-numbers .line-numbers-rows {\n  position: absolute;\n  pointer-events: none;\n  top: 0;\n  font-size: 100%;\n  left: -3.8em;\n  width: 3em; /* works for line-numbers below 1000 lines */\n  letter-spacing: -1px;\n  border-right: 1px solid #999;\n\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\n \n.line-numbers-rows > span {\n  display: block;\n  counter-increment: linenumber;\n}\n\n \n.line-numbers-rows > span:before {\n  content: counter(linenumber);\n  color: #999;\n  display: block;\n  padding-right: 0.8em;\n  text-align: right;\n}\n";
 }
 
 
 // --------------------
-// Request: /components/content.vue?vue&type=style&index=0&scoped=true&lang.css
+// Request: /pages/new_content.vue?vue&type=style&index=0&scoped=true&lang.css
 // Parents: 
-// - /components/content.vue ($id_3032adb6)
+// - /pages/new_content.vue ($id_f76232be)
 // Dependencies: 
 
 // --------------------
-const $id_8fdbd1fd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.my-editor[data-v-7a4a808e] {\n    /* we dont use `language-` classes anymore so thats why we need to add background and text color manually */\n    color: #ccc;\n\n    /* you must provide font-family font-size line-height. Example: */\n    font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;\n    font-size: 14px;\n    line-height: 1.5;\n\n    padding: 0px 10px;\n    overflow: scroll;\n    overflow-x: scroll;\n    max-height:  70vh;\n    width: 95%;\n    margin:0 auto;\n}\n\n  /* optional class for removing the outline */\n.prism-editor__textarea[data-v-7a4a808e]:focus {\n    outline: none;\n    overflow-x: scroll;\n}\n";
+const $id_0094ae0f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "\n.my-editor[data-v-c28e301e] {\n    /* we dont use `language-` classes anymore so thats why we need to add background and text color manually */\n    color: #ccc;\n\n    /* you must provide font-family font-size line-height. Example: */\n    font-family: 'Fira code', Consolas, Menlo, Courier, monospace;\n    font-size: 1rem;\n    line-height: 1.5;\n     padding: 1rem;\n    overflow: auto;\n    max-height:  70vh;\n    width: 100%;\n    margin:0 auto;\n}\n\n  /* optional class for removing the outline */\n.prism-editor__textarea[data-v-c28e301e]:focus {\n    outline: none;\n    overflow-x: scroll;\n}\n\n  \n\n";
 }
 
 
 // --------------------
-// Request: /pages/templates/index.vue
+// Request: /pages/pageview.vue
+// Parents: 
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/routes.mjs ($id_2bd3b053)
+// Dependencies: 
+// - /node_modules/nuxt3/dist/app/index.mjs ($id_d8c2af0f)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_1c4ee556 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/app/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+
+const _sfc_main = {
+  async setup(__props, { expose }) {
+  expose();
+
+let __temp, __restore
+
+    const {data} =  (
+  ([__temp,__restore] = __vite_ssr_import_1__.withAsyncContext(() => __vite_ssr_import_0__.useFetch('/api/departements',{ pick: ['id','title','categories'],params: {search: 106} }))),
+  __temp = await __temp,
+  __restore(),
+  __temp
+)
+    console.log(data.value)
+
+const __returned__ = { data }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${
+    __vite_ssr_import_2__.ssrRenderAttrs(_attrs)
+  }><pre>${
+    __vite_ssr_import_2__.ssrInterpolate($setup.data)
+  }</pre><!--[-->`)
+  __vite_ssr_import_2__.ssrRenderList($setup.data.categories, (c) => {
+    _push(`<h1 class="mb-4">${__vite_ssr_import_2__.ssrInterpolate(c.title)}</h1>`)
+  })
+  _push(`<!--]--></div>`)
+}
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/pageview.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/pageview.vue"]]);
+}
+
+
+// --------------------
+// Request: /pages/plugins/index.vue
 // Parents: 
 // - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/routes.mjs ($id_2bd3b053)
 // Dependencies: 
@@ -4525,7 +3903,7 @@ __vite_ssr_exports__.default = "\n.my-editor[data-v-7a4a808e] {\n    /* we dont 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_83001a7f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_b9b13c0b = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/Menu.vue");
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-sections.vue");
@@ -4544,15 +3922,15 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-se
                 {
                     title: 'Marketing',
                     description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
+                    sub_categories:[
                         {
                             title:'pages content',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
-                                    title:'hero section',
-                                    items:[
+                                    title:'hero sections',
+                                    cards:[
                                         {
                                             id: 1,
                                             title:"classic hero",
@@ -4591,107 +3969,107 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-se
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'Feedback',
-                            items:[
+                            blocks:[
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                             ]
                         },
                         {
                             title:'Elements',
-                            items:[
+                            blocks:[
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'pages Exemples',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         }
@@ -4700,69 +4078,69 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-se
                 {
                     title: 'Application',
                     description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
+                    sub_categories:[
                         {
                             title:'Feedback',
-                            items:[
+                            blocks:[
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                             ]
                         },
                         {
                             title:'pages Exemples',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'Elements',
-                            items:[
+                            blocks:[
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    card:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    card:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    card:[]
                                 },
                             ]
                         },
@@ -4771,15 +4149,15 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-se
                 {
                     title: 'Ecommerce',
                     description: "Landing page heroes, feature sections, newsletter sign up forms — everything you need to build beautifull marketing websites.",
-                    subCategories:[
+                    sub_categories:[
                         {
                             title:'pages content',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[
+                                    cards:[
                                         {
                                             id: 1,
                                             title:"classic hero",
@@ -4818,107 +4196,107 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-se
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'Feedback',
-                            items:[
+                            blocks:[
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 
                             ]
                         },
                         {
                             title:'Elements',
-                            items:[
+                            blocks:[
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         },
                         {
                             title:'pages Exemples',
-                            items:[
+                            blocks:[
                                 {
                                     id:1,
                                     image:'assets/images/bureau.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:2,
                                     image:'assets/images/bureau1.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:3,
                                     image:'assets/images/ajust.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:4,
                                     image:'assets/images/header-1.png',
                                     title:'hero section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:5,
                                     image:'assets/images/header-2.png',
                                     title:'features section',
-                                    items:[]
+                                    cards:[]
                                 },
                                 {
                                     id:6,
                                     image:'assets/images/rename.png',
                                     title:'CTA section',
-                                    items:[]
+                                    cards:[]
                                 },
                             ]
                         }
@@ -4938,7 +4316,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _component_contents_sections = __vite_ssr_import_2__.default
 
   _push(`<div${__vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({ class: "w-full" }, _attrs))}>`)
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_Menu, null, null, _parent))
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_Menu, { items: _ctx.categories }, null, _parent))
   _push(`<!--[-->`)
   __vite_ssr_import_4__.ssrRenderList(_ctx.categories, (contentSection) => {
     _push(__vite_ssr_import_4__.ssrRenderComponent(_component_contents_sections, {
@@ -4955,12 +4333,729 @@ const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = __vite_ssr_import_5__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/templates/index.vue")
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/plugins/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/templates/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/plugins/index.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt3/dist/meta/runtime/index.mjs
+// Parents: 
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /pages/templates/index.vue ($id_83001a7f)
+// Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/composables.mjs ($id_ca9295be)
+// --------------------
+const $id_ea12a3fb = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/composables.mjs");
+__vite_ssr_exportAll__(__vite_ssr_import_0__);
+;
+}
+
+
+// --------------------
+// Request: /components/Menu.vue
+// Parents: 
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /pages/templates/index.vue ($id_83001a7f)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_b1d32007 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+
+const _sfc_main = {
+    props:{
+        items:{
+            type:Array,
+            required:true
+        }
+    }
+}
+
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "overflow-hidden w-full sticky top-0 bg-white z-50 flex justify-between items-center md:w-full md:mr-auto my-4 border-b-2 border-gray-200 p-2" }, _attrs))}><div class="flex justify-start items-center space-x-1 md:space-x-4"><h1 class="hidden p-2 lg:py-2 lg:px-4 md:inline-block font-bold tracking-wide text-dark">Templates &gt;</h1><!--[-->`)
+  __vite_ssr_import_1__.ssrRenderList($props.items, (item) => {
+    _push(`<a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-500 hover:text-dark transition-all duration-200"${
+      __vite_ssr_import_1__.ssrRenderAttr("href", '#'+item.title.replace(' ',''))
+    }>${
+      __vite_ssr_import_1__.ssrInterpolate(item.title)
+    }</a>`)
+  })
+  _push(`<!--]--></div><div class="flex justify-end items-center space-x-2 md:space-x-4"><a class="cursor-pointer bg-jean/20 text-sm md:text-md font-bold tracking-wide rounded-lg px-1 py-2 md:py-2 md:px-4 inline-block text-jean shadow-sm hover:ring-1 hover:ring-jean hover:scale-95 transition-all duration-200" href="/new_content">Add section</a></div></div>`)
+}
+
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Menu.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Menu.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/contents-sections.vue
+// Parents: 
+// - /pages/plugins/index.vue ($id_b9b13c0b)
+// - /pages/templates/index.vue ($id_83001a7f)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /components/Section.vue ($id_5ff493dc)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_0b3ec488 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/Section.vue");
+
+
+const _sfc_main = {
+    props:{
+        contentSection:{
+            type:Object,
+            required:true,
+        },
+    }
+}
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Section = __vite_ssr_import_0__.default
+
+  _push(`<div${
+    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
+      id: $props.contentSection.title.replace(' ',''),
+      class: "w-full my-16 p-4"
+    }, _attrs))
+  }><div class="border-b-2 border-gray-200"><h1 class="text-xl font-bold text-dark capitalize">${
+    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.title)
+  }</h1><p class="text-gray-400 text-sm mt-2">${
+    __vite_ssr_import_2__.ssrInterpolate($props.contentSection.description)
+  }</p></div><!--[-->`)
+  __vite_ssr_import_2__.ssrRenderList($props.contentSection.sub_categories, (section) => {
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Section, {
+      key: section.title,
+      section: section,
+      contentSection: $props.contentSection
+    }, null, _parent))
+  })
+  _push(`<!--]--></div>`)
+}
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/contents-sections.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/contents-sections.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/Section.vue
+// Parents: 
+// - /components/contents-sections.vue ($id_0b3ec488)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /components/card.vue ($id_d9dfd282)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_5ff493dc = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/card.vue");
+
+
+const _sfc_main = {
+    props:{
+        section:{
+            type:Object,
+            required:true
+        },
+        contentSection:{
+            type:Object,
+            required:true,
+        },
+    }
+}
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_card = __vite_ssr_import_0__.default
+
+  _push(`<div${
+    __vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
+      id: $props.contentSection.title.replace(' ','')+'-'+$props.section.title.replace(' ',''),
+      class: "my-4 grid gap-x-8 gap-y-6 grid-cols-3 lg:grid-cols-4 py-8 border-b-2 border-gray-200"
+    }, _attrs))
+  }><h1 class="col-span-3 md:col-span-1 md:row-span-full text-md font-bold text-dark">${
+    __vite_ssr_import_2__.ssrInterpolate($props.section.title)
+  }</h1><div class="col-span-3 grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-y-8 lg:gap-x-8"><!--[-->`)
+  __vite_ssr_import_2__.ssrRenderList($props.section.blocks, (card) => {
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_card, {
+      key: card.id,
+      card: card,
+      contentSection: $props.contentSection,
+      section: $props.section
+    }, null, _parent))
+  })
+  _push(`<!--]--></div></div>`)
+}
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Section.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/Section.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/card.vue
+// Parents: 
+// - /components/Section.vue ($id_5ff493dc)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /assets/images/bg.jpg ($id_7365e01c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_d9dfd282 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+
+const _sfc_main = {
+    props:{
+        card:{
+            type:Object,
+            required:true
+        },
+        section:{
+            type:Object,
+            required:true
+        },
+        contentSection:{
+            type:Object,
+            required:true
+        },
+    }
+}
+
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/assets/images/bg.jpg");
+
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  if ($props.card) {
+    _push(`<a${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
+      class: "group rounded-lg ring-1 ring-black ring-opacity-5",
+      href: '/templates/'+$props.contentSection.title+'/'+$props.section.title+'-'+$props.card.id
+    }, _attrs))}><div class="aspect-h-1 aspect-w-2 rounded-lg">`)
+    if ($props.card.image) {
+      _push(`<img class="object-cover rounded-t-lg contrast-100"${
+        __vite_ssr_import_1__.ssrRenderAttr("src", $props.card.image)
+      }${
+        __vite_ssr_import_1__.ssrRenderAttr("alt", $props.card.image)
+      }>`)
+    } else {
+      _push(`<img class="object-cover rounded-t-lg contrast-100"${__vite_ssr_import_1__.ssrRenderAttr("src", __vite_ssr_import_2__.default)} alt="bg.jpg">`)
+    }
+    _push(`</div><div class="flex justify-center flex-col items-start p-2"><h2 class="text-dark tracking-wide font-bold text-sm capitalize">${__vite_ssr_import_1__.ssrInterpolate($props.card.title)}</h2>`)
+    if ($props.card && $props.card.cards) {
+      _push(`<p class="text-gray-400 text-sm"><span class="text-dark tracking-wide font-bold">${__vite_ssr_import_1__.ssrInterpolate($props.card.cards.length)}</span>`)
+      if ($props.card.cards.length >1) {
+        _push(`<span> elements.</span>`)
+      } else {
+        _push(`<span> element.</span>`)
+      }
+      _push(`</p>`)
+    } else {
+      _push(`<!---->`)
+    }
+    _push(`</div></a>`)
+  } else {
+    _push(`<!---->`)
+  }
+}
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/card.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/card.vue"]]);
+}
+
+
+// --------------------
+// Request: /assets/images/bg.jpg
+// Parents: 
+// - /components/card.vue ($id_d9dfd282)
+// Dependencies: 
+
+// --------------------
+const $id_7365e01c = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "/_nuxt/assets/images/bg.jpg";
+}
+
+
+// --------------------
+// Request: /pages/templates/[group]/[section]-[id].vue
+// Parents: 
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/routes.mjs ($id_2bd3b053)
+// Dependencies: 
+// - /components/content.vue ($id_3032adb6)
+// - /services/axios.js ($id_a416e1ff)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_42acd7e4 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/content.vue");
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/services/axios.js");
+
+
+const _sfc_main = {
+    created(){
+        this.get_cards()
+    },
+    data:()=>({
+        block:null
+    }),
+    methods:{
+        async get_cards(){
+            var response = await __vite_ssr_import_1__.Axios.get("/blocks/"+this.$route.params.id)
+            this.block= response.data
+        }
+    }
+}
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_content = __vite_ssr_import_0__.default
+
+  if (_ctx.block) {
+    _push(`<div${
+      __vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "w-full my-16 space-y-1" }, _attrs))
+    }><div class="text-gray-400 text-sm"><a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-400 font-bold hover:text-dark transition-all duration-200"${
+      __vite_ssr_import_3__.ssrRenderAttr("href", '/templates#'+_ctx.$route.params.group.toString().replace(' ',''))
+    }>${
+      __vite_ssr_import_3__.ssrInterpolate(_ctx.$route.params.group)
+    }</a> &gt; <a class="p-2 lg:py-2 cursor-pointer lg:px-4 inline-block text-gray-400 font-bold hover:text-dark transition-all duration-200"${
+      __vite_ssr_import_3__.ssrRenderAttr("href", '/templates#'+_ctx.$route.params.group.toString().replace(' ','')+'-'+_ctx.$route.params.section.toString().replace(' ',''))
+    }>${
+      __vite_ssr_import_3__.ssrInterpolate(_ctx.$route.params.section)
+    }</a></div>`)
+    if (_ctx.block) {
+      _push(`<h1 class="hidden p-2 lg:py-2 lg:px-4 md:inline-block text-2xl font-black tracking-wide text-dark capitalize">${__vite_ssr_import_3__.ssrInterpolate(_ctx.block.title)}</h1>`)
+    } else {
+      _push(`<!---->`)
+    }
+    _push(__vite_ssr_import_3__.ssrRenderComponent(_component_content, { class: "my-8" }, null, _parent))
+    if (_ctx.block.cards && _ctx.block.cards.length>0) {
+      _push(`<div class="w-full"><!--[-->`)
+      __vite_ssr_import_3__.ssrRenderList(_ctx.block.cards, (card) => {
+        _push(__vite_ssr_import_3__.ssrRenderComponent(_component_content, {
+          content: card,
+          key: card.id
+        }, null, _parent))
+      })
+      _push(`<!--]--></div>`)
+    } else {
+      _push(`<div class="w-full h-96 p-8"><div class="flex w-full h-full justify-center items-center space-x-4"><h1 class="text-4xl text-center tracking-wide text-black font-black"> this block is empty. </h1><a href="/new_content" class="bg-jean/20 md:w-auto flex cursor-pointer justify-center items-center space-x-2 px-4 py-2 md:px-6 md:py-4 text-jean rounded-lg font-bold tracking-wider shadow-lg shadow-jean/10 hover:scale-95 hover:ring-1 hover:ring-jean transition-all duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span class="text-center hidden md:block">Create</span></a></div></div>`)
+    }
+    _push(`</div>`)
+  } else {
+    _push(`<!---->`)
+  }
+}
+
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/templates/[group]/[section]-[id].vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/templates/[group]/[section]-[id].vue"]]);
+}
+
+
+// --------------------
+// Request: /components/content.vue
+// Parents: 
+// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue-prism-editor/dist/prismeditor.esm.js ($id_e506e72f)
+// - /node_modules/vue-prism-editor/dist/prismeditor.min.css ($id_209a256d)
+// - /node_modules/prismjs/prism.js ($id_e07646f6)
+// - /node_modules/prismjs/components/prism-clike.js ($id_b75c5470)
+// - /node_modules/prismjs/components/prism-javascript.js ($id_bdb60b25)
+// - /assets/css/prism-editor.css ($id_6c6c3065)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /components/content.vue?vue&type=style&index=0&scoped=true&lang.css ($id_8fdbd1fd)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_3032adb6 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue-prism-editor/dist/prismeditor.esm.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue-prism-editor/dist/prismeditor.min.css");
+ 
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/prismjs/prism.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/prismjs/components/prism-clike.js");
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/prismjs/components/prism-javascript.js");
+
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/assets/css/prism-editor.css");
+
+const _sfc_main = {
+    props:{
+        content:{
+            type:Object,
+            required:true
+        }
+    },
+    data: () => ({
+        state:'preview',
+        isCopy:false,
+        item: {
+            id: 1,
+            title: "classic hero",
+            content: `
+            <div class="w-full  h-[50vh]">
+                <div class="w-full h-full flex justify-evenly items-center">
+                    <div
+                        class="w-full p-2 md:p-0 md:w-2/5 flex justify-center items-center text-center flex-col space-y-6 ">
+                        <h1 class="text-dark text-5xl tracking-wide font-black">
+                            Code quickly and reliably with <span class="text-jean">Helpers</span>.
+                        </h1>
+                        <p class="text-lg text-gray-500">
+                            Create a project and help you with our various tools and templates.
+                        </p>
+                        <a href="#"
+                            class="bg-jean/10 text-jean  w-2/3 block cursor-pointer   px-8 py-4 rounded-lg font-semibold tracking-wider shadow-sm hover:border-transparent hover:text-white hover:bg-jean hover:shadow-jean/30  transition-all duration-300">
+                            See our latest creation
+                        </a>
+
+                        <nuxt-link to="/templates"
+                            class="bg-jean w-2/3 block cursor-pointer  px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95  transition-all duration-300 ">
+                            Get started
+                        </nuxt-link>
+                    </div>
+                    <div class="hidden md:flex md:w-3/5  justify-center items-center flex-col space-y-6">
+                        <img src="https://cdn0.iconfinder.com/data/icons/azure-illustrations/1000/settings___preferences_options_dial_configuration_configure_man-2048.png" alt="header-bg.jpg">
+                    </div>
+                </div>
+            </div>
+              `
+        },
+    }),
+    methods:{
+         copy() {
+
+             this.isCopy=true
+             var vm = this
+             setTimeout(()=>{
+                vm.isCopy=false
+             },2000)
+            var copy= document.createElement("textarea")
+            copy.classList.add("hidden")
+            copy.value = this.item.content
+            document.body.appendChild(copy)
+            copy.focus()
+            copy.select()
+            document.execCommand("copy")
+            document.body.removeChild(copy)
+        },
+        highlighter(code) {
+            return __vite_ssr_import_3__.default.highlight(code, __vite_ssr_import_3__.default.languages.html, "html"); // languages.<insert language> to return html with markup
+        },
+    },
+      components: {
+    PrismEditor: __vite_ssr_import_1__.PrismEditor
+  },
+}
+
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_prism_editor = __vite_ssr_import_7__.resolveComponent("prism-editor")
+
+  _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "w-full px-2 space-y-16" }, _attrs))} data-v-7a4a808e>`)
+  if ($props.content) {
+    _push(`<div data-v-7a4a808e><div class="flex justify-between items-center" data-v-7a4a808e><h1 class="text-sm font-bold text-gray-500 uppercase" data-v-7a4a808e>${
+      __vite_ssr_import_8__.ssrInterpolate($props.content.title)
+    }</h1><nav class="flex justify-between items-center space-x-2" data-v-7a4a808e><button class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
+      __vite_ssr_import_8__.ssrRenderClass([_ctx.state ==='preview' ? 'stroke-jean' : 'stroke-slate-600', "h-5 w-5"])
+    }" fill="none" viewBox="0 0 24 24" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" data-v-7a4a808e></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" data-v-7a4a808e></path></svg><span data-v-7a4a808e>preview</span></button><button class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
+      __vite_ssr_import_8__.ssrRenderClass([_ctx.state ==='code' ? 'stroke-jean' : 'stroke-slate-600', "h-5 w-5 fill-white"])
+    }" viewBox="0 0 24 24" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" data-v-7a4a808e></path></svg><span data-v-7a4a808e>code</span></button><button class="text-sm font-medium relative text-gray-600 flex items-center rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-100" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
+      __vite_ssr_import_8__.ssrRenderClass([_ctx.isCopy ? 'stroke-jean  -rotate-[8deg]' : 'stroke-slate-600', "h-6 w-6"])
+    }" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" data-v-7a4a808e></path></svg>`)
+    if (_ctx.isCopy) {
+      _push(`<span class="absolute inset-x-0 bottom-full mb-2.5 flex justify-center" data-v-7a4a808e><span class="bg-gray-900 text-white rounded-md text-[0.625rem] leading-4 tracking-wide font-semibold uppercase py-1 px-3 filter drop-shadow-md" data-v-7a4a808e><svg aria-hidden="true" width="16" height="6" viewBox="0 0 16 6" class="text-gray-900 absolute top-full left-1/2 -mt-px -ml-2" data-v-7a4a808e><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1V1.00366V1.00366V1.00371H1.01672C2.72058 1.0147 4.24225 2.74704 5.42685 4.72928C6.42941 6.40691 9.57154 6.4069 10.5741 4.72926C11.7587 2.74703 13.2803 1.0147 14.9841 1.00371H15V0Z" fill="currentColor" data-v-7a4a808e></path></svg> Copied! </span></span>`)
+    } else {
+      _push(`<!---->`)
+    }
+    _push(`</button></nav></div>`)
+    if (_ctx.state=='preview') {
+      _push(`<div class="mt-4" data-v-7a4a808e><div data-v-7a4a808e>${$props.content.content}</div></div>`)
+    } else {
+      _push(`<!---->`)
+    }
+    _push(`<div style="${__vite_ssr_import_8__.ssrRenderStyle((_ctx.state=='code') ? null : { display: "none" })}" class="rounded-lg mt-4" data-v-7a4a808e>`)
+    _push(__vite_ssr_import_8__.ssrRenderComponent(_component_prism_editor, {
+      ref: "editor",
+      class: "my-editor bg-bleuTherne overflow-scroll rounded-lg",
+      modelValue: $props.content.content,
+      "onUpdate:modelValue": $event => (($props.content.content) = $event),
+      readonly: "",
+      highlight: $options.highlighter
+    }, null, _parent))
+    _push(`</div></div>`)
+  } else {
+    _push(`<!---->`)
+  }
+  _push(`<div data-v-7a4a808e><div class="flex justify-between items-center my-32" data-v-7a4a808e><h1 class="text-sm font-bold text-gray-500 uppercase" data-v-7a4a808e>${
+    __vite_ssr_import_8__.ssrInterpolate(_ctx.item.title)
+  }</h1><nav class="flex justify-between items-center space-x-2" data-v-7a4a808e><button class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
+    __vite_ssr_import_8__.ssrRenderClass([_ctx.state ==='preview' ? 'stroke-jean' : 'stroke-slate-600', "h-5 w-5"])
+  }" fill="none" viewBox="0 0 24 24" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" data-v-7a4a808e></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" data-v-7a4a808e></path></svg><span data-v-7a4a808e>preview</span></button><button class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
+    __vite_ssr_import_8__.ssrRenderClass([_ctx.state ==='code' ? 'stroke-jean' : 'stroke-slate-600', "h-5 w-5 fill-white"])
+  }" viewBox="0 0 24 24" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" data-v-7a4a808e></path></svg><span data-v-7a4a808e>code</span></button><button class="text-sm font-medium relative text-gray-600 flex items-center rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-100" data-v-7a4a808e><svg xmlns="http://www.w3.org/2000/svg" class="${
+    __vite_ssr_import_8__.ssrRenderClass([_ctx.isCopy ? 'stroke-jean  -rotate-[8deg]' : 'stroke-slate-600', "h-6 w-6"])
+  }" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-7a4a808e><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" data-v-7a4a808e></path></svg>`)
+  if (_ctx.isCopy) {
+    _push(`<span class="absolute inset-x-0 bottom-full mb-2.5 flex justify-center" data-v-7a4a808e><span class="bg-gray-900 text-white rounded-md text-[0.625rem] leading-4 tracking-wide font-semibold uppercase py-1 px-3 filter drop-shadow-md" data-v-7a4a808e><svg aria-hidden="true" width="16" height="6" viewBox="0 0 16 6" class="text-gray-900 absolute top-full left-1/2 -mt-px -ml-2" data-v-7a4a808e><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1V1.00366V1.00366V1.00371H1.01672C2.72058 1.0147 4.24225 2.74704 5.42685 4.72928C6.42941 6.40691 9.57154 6.4069 10.5741 4.72926C11.7587 2.74703 13.2803 1.0147 14.9841 1.00371H15V0Z" fill="currentColor" data-v-7a4a808e></path></svg> Copied! </span></span>`)
+  } else {
+    _push(`<!---->`)
+  }
+  _push(`</button></nav></div>`)
+  if (_ctx.state=='preview') {
+    _push(`<div class="mt-4" data-v-7a4a808e><div data-v-7a4a808e>${_ctx.item.content}</div></div>`)
+  } else {
+    _push(`<!---->`)
+  }
+  _push(`<div style="${__vite_ssr_import_8__.ssrRenderStyle((_ctx.state=='code') ? null : { display: "none" })}" class="rounded-lg mt-4" data-v-7a4a808e>`)
+  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_prism_editor, {
+    ref: "editor",
+    class: "my-editor bg-bleuTherne overflow-scroll rounded-lg",
+    modelValue: _ctx.item.content,
+    "onUpdate:modelValue": $event => ((_ctx.item.content) = $event),
+    readonly: "",
+    highlight: $options.highlighter
+  }, null, _parent))
+  _push(`</div></div></div>`)
+}
+
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/components/content.vue?vue&type=style&index=0&scoped=true&lang.css");
+
+
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_10__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/content.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_11__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-7a4a808e"],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/content.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/content.vue?vue&type=style&index=0&scoped=true&lang.css
+// Parents: 
+// - /components/content.vue ($id_3032adb6)
+// Dependencies: 
+
+// --------------------
+const $id_8fdbd1fd = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "\n.my-editor[data-v-7a4a808e] {\n    /* we dont use `language-` classes anymore so thats why we need to add background and text color manually */\n    color: #ccc;\n\n    /* you must provide font-family font-size line-height. Example: */\n    font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;\n    font-size: 14px;\n    line-height: 1.5;\n\n    padding: 0px 10px;\n    overflow: scroll;\n    overflow-x: scroll;\n    max-height:  70vh;\n    width: 95%;\n    margin:0 auto;\n}\n\n  /* optional class for removing the outline */\n.prism-editor__textarea[data-v-7a4a808e]:focus {\n    outline: none;\n    overflow-x: scroll;\n}\n";
+}
+
+
+// --------------------
+// Request: /services/axios.js
+// Parents: 
+// - /pages/templates/[group]/[section]-[id].vue ($id_42acd7e4)
+// - /pages/templates/index.vue ($id_83001a7f)
+// Dependencies: 
+// - /node_modules/axios/index.js ($id_9a0dac16)
+// --------------------
+const $id_a416e1ff = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/axios/index.js");
+
+
+const Axios = __vite_ssr_import_0__.default.create({
+    baseURL: "http://localhost:3000/api/v1"
+})
+Object.defineProperty(__vite_ssr_exports__, "Axios", { enumerable: true, configurable: true, get(){ return Axios }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/axios/index.js
+// Parents: 
+// - /services/axios.js ($id_a416e1ff)
+// Dependencies: 
+
+// --------------------
+const $id_9a0dac16 = (global, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) => import('file:///Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/node_modules/axios/index.js').then(r => { exports.default = r.default; ssrExportAll(r) }).catch(e => { console.error(e); throw new Error('[vite dev] Error loading external "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/node_modules/axios/index.js".') })
+
+
+// --------------------
+// Request: /pages/templates/index.vue
+// Parents: 
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/routes.mjs ($id_2bd3b053)
+// Dependencies: 
+// - /node_modules/nuxt3/dist/meta/runtime/index.mjs ($id_ea12a3fb)
+// - /components/Menu.vue ($id_b1d32007)
+// - /components/contents-sections.vue ($id_0b3ec488)
+// - /services/axios.js ($id_a416e1ff)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_83001a7f = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt3/dist/meta/runtime/index.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/Menu.vue");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/contents-sections.vue");
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/services/axios.js");
+
+const _sfc_main = {
+         setup () {
+            __vite_ssr_import_0__.useMeta({
+                htmlAttrs: {
+                    class: 'scroll-smooth'
+                }
+            })
+        },
+        created(){
+            this.get_categories()
+        },
+        data: () =>({
+            categories:null
+        }),
+        methods:{
+            async get_categories() {
+                var response = await __vite_ssr_import_3__.Axios.get("/categories")
+                this.categories= response.data
+            }
+        }
+    }
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Menu = __vite_ssr_import_1__.default
+  const _component_contents_sections = __vite_ssr_import_2__.default
+
+  if (_ctx.categories) {
+    _push(`<div${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({ class: "w-full" }, _attrs))}>`)
+    _push(__vite_ssr_import_5__.ssrRenderComponent(_component_Menu, { items: _ctx.categories }, null, _parent))
+    _push(`<!--[-->`)
+    __vite_ssr_import_5__.ssrRenderList(_ctx.categories, (contentSection) => {
+      _push(__vite_ssr_import_5__.ssrRenderComponent(_component_contents_sections, {
+        key: contentSection.title,
+        contentSection: contentSection
+      }, null, _parent))
+    })
+    _push(`<!--]--></div>`)
+  } else {
+    _push(`<!---->`)
+  }
+}
+
+
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_6__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/templates/index.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/pages/templates/index.vue"]]);
 }
 
 
@@ -5045,6 +5140,42 @@ __vite_ssr_exports__.default = function (nuxtApp) {
   }
 }
 ;
+}
+
+
+// --------------------
+// Request: /components/get-started.vue
+// Parents: 
+// - /@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs ($id_71de6cd0)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_645fb6af = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "p-8 md:p-0 w-full overflow-hidden" }, _attrs))}><div class="flex justify-end items-end text-center"><a href="#" class="bg-jean flex cursor-pointer justify-evenly items-center px-8 py-4 text-white rounded-lg font-semibold tracking-wider shadow-lg shadow-jean/30 hover:scale-95 transition-all duration-300"><span>Get started</span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-white ml-4" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a></div></div>`)
+}
+
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/get-started.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/components/get-started.vue"]]);
 }
 
 
@@ -5214,6 +5345,7 @@ const __modules__ = {
  '/@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/layouts.mjs': $id_a03c97d9,
  '/layouts/default.vue': $id_7689e89d,
  '/components/navbar.vue': $id_ccd51fbe,
+ '/components/navbar.vue?vue&type=style&index=0&lang.css': $id_96e91790,
  '/components/Footer.vue': $id_f3d8f325,
  '/components/github-icon.vue': $id_8657dbc0,
  '/components/instagram-icon.vue': $id_ecce40b1,
@@ -5228,26 +5360,32 @@ const __modules__ = {
  '/assets/images/bureau.png': $id_68a17cc4,
  '/assets/images/ajust.png': $id_0362fbec,
  '/assets/images/rename.png': $id_2ddbc618,
- '/components/get-started.vue': $id_645fb6af,
- '/pages/plugins/index.vue': $id_b9b13c0b,
- '/node_modules/nuxt3/dist/meta/runtime/index.mjs': $id_ea12a3fb,
- '/components/Menu.vue': $id_b1d32007,
- '/components/contents-sections.vue': $id_0b3ec488,
- '/components/Section.vue': $id_5ff493dc,
- '/components/card.vue': $id_d9dfd282,
- '/pages/templates/[group]/[section]-[id].vue': $id_42acd7e4,
- '/components/content.vue': $id_3032adb6,
+ '/pages/new_content.vue': $id_f76232be,
  '/node_modules/vue-prism-editor/dist/prismeditor.esm.js': $id_e506e72f,
  '/node_modules/vue-prism-editor/dist/prismeditor.min.css': $id_209a256d,
  '/node_modules/prismjs/prism.js': $id_e07646f6,
  '/node_modules/prismjs/components/prism-clike.js': $id_b75c5470,
  '/node_modules/prismjs/components/prism-javascript.js': $id_bdb60b25,
  '/assets/css/prism-editor.css': $id_6c6c3065,
+ '/pages/new_content.vue?vue&type=style&index=0&scoped=true&lang.css': $id_0094ae0f,
+ '/pages/pageview.vue': $id_1c4ee556,
+ '/pages/plugins/index.vue': $id_b9b13c0b,
+ '/node_modules/nuxt3/dist/meta/runtime/index.mjs': $id_ea12a3fb,
+ '/components/Menu.vue': $id_b1d32007,
+ '/components/contents-sections.vue': $id_0b3ec488,
+ '/components/Section.vue': $id_5ff493dc,
+ '/components/card.vue': $id_d9dfd282,
+ '/assets/images/bg.jpg': $id_7365e01c,
+ '/pages/templates/[group]/[section]-[id].vue': $id_42acd7e4,
+ '/components/content.vue': $id_3032adb6,
  '/components/content.vue?vue&type=style&index=0&scoped=true&lang.css': $id_8fdbd1fd,
+ '/services/axios.js': $id_a416e1ff,
+ '/node_modules/axios/index.js': $id_9a0dac16,
  '/pages/templates/index.vue': $id_83001a7f,
  '/node_modules/@nuxt/nitro/dist/runtime/app/nitro.client.mjs': $id_7b587af2,
  '/node_modules/ohmyfetch/dist/index.mjs': $id_780217c4,
  '/@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/components.mjs': $id_71de6cd0,
+ '/components/get-started.vue': $id_645fb6af,
  '/@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/root-component.mjs': $id_c6c082ac,
  '/node_modules/nuxt3/dist/app/components/nuxt-root.vue': $id_f8564e04,
  '/@id/__x00__virtual:/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/app-component.mjs': $id_8c900449,

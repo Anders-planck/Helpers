@@ -2,6 +2,7 @@
 declare module '@nuxt/nitro' {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
+    '/api/departements': Awaited<ReturnType<typeof import('../server/api/departements').default>>
   }
 }
 export {}

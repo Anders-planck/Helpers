@@ -12,15 +12,11 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: ['@/assets/css/tailwind.scss'],
-  router: {
-    linkExactActiveClass: 'text-dark',
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: 'https://localhost:3000/api/v1'
+    }
   },
-   loading: {
-    color: 'DodgerBlue',
-    height: '10px',
-    continuous: true,
-    duration: 3000
-  },
+  css:  ['@/assets/css/tailwind.scss']
   
 })

@@ -1,64 +1,120 @@
 <template>
     <div class="w-full px-2 space-y-16">
-        <div class="flex justify-between items-center ">
-            <h1 class="text-sm font-bold text-gray-500 uppercase">Lorem ipsum dolor sit.</h1>
-            <nav class="flex justify-between items-center space-x-2">
-                <button @click="state='preview'"
-                    class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 "
-                        :class="state ==='preview' ? 'stroke-jean' : 'stroke-slate-600'" fill="none"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                    <span>preview</span>
-                </button>
-                <button @click="state='code'"
-                    class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  fill-white"
-                        :class="state ==='code' ? 'stroke-jean' : 'stroke-slate-600'" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
-                    <span>code</span>
-                </button>
-                <button @click="copy"
-                    class="text-sm font-medium relative text-gray-600 flex items-center  rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 "
-                        :class="isCopy ? 'stroke-jean  -rotate-[8deg]' : 'stroke-slate-600'" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                    </svg>
+        <div v-if="content">
+            <div class="flex justify-between items-center ">
+                <h1 class="text-sm font-bold text-gray-500 uppercase">{{content.title}}</h1>
+                <nav class="flex justify-between items-center space-x-2">
+                    <button @click="state='preview'"
+                        class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 "
+                            :class="state ==='preview' ? 'stroke-jean' : 'stroke-slate-600'" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                        <span>preview</span>
+                    </button>
+                    <button @click="state='code'"
+                        class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  fill-white"
+                            :class="state ==='code' ? 'stroke-jean' : 'stroke-slate-600'" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                        <span>code</span>
+                    </button>
+                    <button @click="copy"
+                        class="text-sm font-medium relative text-gray-600 flex items-center  rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 "
+                            :class="isCopy ? 'stroke-jean  -rotate-[8deg]' : 'stroke-slate-600'" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
 
-                    <span class="absolute inset-x-0 bottom-full mb-2.5 flex justify-center " v-if="isCopy">
-                        <span
-                            class="bg-gray-900 text-white rounded-md text-[0.625rem] leading-4 tracking-wide font-semibold uppercase py-1 px-3 filter drop-shadow-md">
-                            <svg aria-hidden="true" width="16" height="6" viewBox="0 0 16 6"
-                                class="text-gray-900 absolute top-full left-1/2 -mt-px -ml-2">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15 0H1V1.00366V1.00366V1.00371H1.01672C2.72058 1.0147 4.24225 2.74704 5.42685 4.72928C6.42941 6.40691 9.57154 6.4069 10.5741 4.72926C11.7587 2.74703 13.2803 1.0147 14.9841 1.00371H15V0Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                            Copied!
+                        <span class="absolute inset-x-0 bottom-full mb-2.5 flex justify-center " v-if="isCopy">
+                            <span
+                                class="bg-gray-900 text-white rounded-md text-[0.625rem] leading-4 tracking-wide font-semibold uppercase py-1 px-3 filter drop-shadow-md">
+                                <svg aria-hidden="true" width="16" height="6" viewBox="0 0 16 6"
+                                    class="text-gray-900 absolute top-full left-1/2 -mt-px -ml-2">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 0H1V1.00366V1.00366V1.00371H1.01672C2.72058 1.0147 4.24225 2.74704 5.42685 4.72928C6.42941 6.40691 9.57154 6.4069 10.5741 4.72926C11.7587 2.74703 13.2803 1.0147 14.9841 1.00371H15V0Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                Copied!
+                            </span>
                         </span>
-                    </span>
-                </button>
-            </nav>
+                    </button>
+                </nav>
+            </div>
+            <div v-if="state=='preview'" class="mt-4">
+                <div v-html="content.content"></div>
+            </div>
+            <div v-show="state=='code'" class="rounded-lg mt-4">
+                <prism-editor ref="editor" class="my-editor bg-bleuTherne overflow-scroll rounded-lg"
+                    v-model="content.content" readonly :highlight="highlighter">
+                </prism-editor>
+            </div>
         </div>
-        <div v-if="state=='preview'" class="mt-4">
-            <div v-html="item.content"></div>
-        </div>
-        <div v-show="state=='code'" class="rounded-lg mt-4">
-            <prism-editor 
-            ref="editor" 
-            class="my-editor bg-bleuTherne overflow-scroll rounded-lg" 
-            v-model="item.content"
-            readonly 
-            :highlight="highlighter">
-            </prism-editor>
+        <div>
+            <div class="flex justify-between items-center my-32">
+                <h1 class="text-sm font-bold text-gray-500 uppercase">{{item.title}}</h1>
+                <nav class="flex justify-between items-center space-x-2">
+                    <button @click="state='preview'"
+                        class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 "
+                            :class="state ==='preview' ? 'stroke-jean' : 'stroke-slate-600'" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                        <span>preview</span>
+                    </button>
+                    <button @click="state='code'"
+                        class="text-sm font-medium text-gray-600 flex items-center border-2 border-gray-200 rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  fill-white"
+                            :class="state ==='code' ? 'stroke-jean' : 'stroke-slate-600'" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                        <span>code</span>
+                    </button>
+                    <button @click="copy"
+                        class="text-sm font-medium relative text-gray-600 flex items-center  rounded-lg px-2 py-1 space-x-1 hover:scale-95 transition-all duration-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 "
+                            :class="isCopy ? 'stroke-jean  -rotate-[8deg]' : 'stroke-slate-600'" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+
+                        <span class="absolute inset-x-0 bottom-full mb-2.5 flex justify-center " v-if="isCopy">
+                            <span
+                                class="bg-gray-900 text-white rounded-md text-[0.625rem] leading-4 tracking-wide font-semibold uppercase py-1 px-3 filter drop-shadow-md">
+                                <svg aria-hidden="true" width="16" height="6" viewBox="0 0 16 6"
+                                    class="text-gray-900 absolute top-full left-1/2 -mt-px -ml-2">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 0H1V1.00366V1.00366V1.00371H1.01672C2.72058 1.0147 4.24225 2.74704 5.42685 4.72928C6.42941 6.40691 9.57154 6.4069 10.5741 4.72926C11.7587 2.74703 13.2803 1.0147 14.9841 1.00371H15V0Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                Copied!
+                            </span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+            <div v-if="state=='preview'" class="mt-4">
+                <div v-html="item.content"></div>
+            </div>
+            <div v-show="state=='code'" class="rounded-lg mt-4">
+                <prism-editor ref="editor" class="my-editor bg-bleuTherne overflow-scroll rounded-lg"
+                    v-model="item.content" readonly :highlight="highlighter">
+                </prism-editor>
+            </div>
         </div>
     </div>
 </template>
@@ -71,8 +127,13 @@ import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
 import '@/assets/css/prism-editor.css';
 export default {
+    props:{
+        content:{
+            type:Object,
+            required:true
+        }
+    },
     data: () => ({
-        code: 'console.log("Hello World")',
         state:'preview',
         isCopy:false,
         item: {
@@ -116,7 +177,8 @@ export default {
                 vm.isCopy=false
              },2000)
             var copy= document.createElement("textarea")
-            copy.value = this.$refs.editor.$el.outerHTML
+            copy.classList.add("hidden")
+            copy.value = this.item.content
             document.body.appendChild(copy)
             copy.focus()
             copy.select()

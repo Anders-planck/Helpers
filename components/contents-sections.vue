@@ -6,10 +6,11 @@
                 {{contentSection.description}}
             </p>
         </div>
-        <Section 
-        v-for="section in contentSection.subCategories" 
+        <Section
+        v-for="section in contentSection.sub_categories" 
         :key="section.title"
         :section="section"
+        :contentSection="contentSection"
         />
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full overflow-hidden space-y-8 md:space-y-0 p-4 md:p-0">
+    <div class="w-full md:w-11/12  lg:w-10/12 lg:mx-auto md:mx-auto overflow-hidden space-y-16 p-4 md:p-0">
         <div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8">
             <div class="col md:col flex flex-col justify-center space-y-4 items-center text-center">
                 <h1 class="text-3xl font-black text-dark ">Template</h1>
@@ -23,10 +23,10 @@
             </div>
         </div>
         <div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="hidden md:col md:block">
+            <div class="hidden md:col-span-1 md:block">
                 <img src="@/assets/images/ajust.png" alt="bureau.png" class="[clip-path:cicle(70%_at_20%_30%)]">
             </div>
-            <div class="col md:col flex flex-col justify-center space-y-4 items-center text-center">
+            <div class="col-span-1  flex flex-col justify-center space-y-4 items-center text-center">
                 <h1 class="text-3xl font-black text-dark ">Plugins</h1>
                 <p class="text-gray-400 text-md p-2 md:px-16">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit nesciunt esse placeat culpa

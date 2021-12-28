@@ -10,13 +10,14 @@ import { createFetch as createFetch$1 } from 'ohmyfetch';
 import destr from 'destr';
 import { createCall, createFetch } from 'unenv/runtime/fetch/index';
 import { error404, errorDev } from '@nuxt/design';
+import * as url from 'url';
 import { createRenderer } from 'vue-bundle-renderer';
 import devalue from '@nuxt/devalue';
 import defu from 'defu';
 import htmlTemplate from '/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/views/document.template.mjs';
 import { renderToString as renderToString$2 } from 'vue/server-renderer';
 
-const _runtimeConfig = {public:{app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:null}},private:{}};
+const _runtimeConfig = {public:{axios:{baseURL:"https:\u002F\u002Flocalhost:3000\u002Fapi\u002Fv1"},app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:null}},private:{}};
 for (const type of ["private", "public"]) {
   for (const key in _runtimeConfig[type]) {
     _runtimeConfig[type][key] = destr(process.env[key] || _runtimeConfig[type][key]);
@@ -89,8 +90,10 @@ function handleError(error, req, res) {
   res.end(html);
 }
 
-const middleware = [
-    
+const _1f7aa5 = () => Promise.resolve().then(function () { return departements$1; });
+
+  const middleware = [
+    { route: '/api/departements', handle: _1f7aa5, lazy: true, promisify: true }
   ];
 
 const app = createApp({
@@ -104,8 +107,8 @@ app.stack;
 const handle = useBase("/", app);
 const localCall = createCall(handle);
 const localFetch = createFetch(localCall, globalThis.fetch);
-const $fetch = createFetch$1({ fetch: localFetch });
-globalThis.$fetch = $fetch;
+const $fetch$1 = createFetch$1({ fetch: localFetch });
+globalThis.$fetch = $fetch$1;
 
 const server = new Server(handle);
 function getAddress() {
@@ -130,7 +133,27 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/dist" + "/" + "1640344810";
+const departements = async (req, res) => {
+  const queryObject = url.parse(req.url, true).query;
+  let data = { data: "" };
+  const { search } = queryObject;
+  console.log(search);
+  if (search) {
+    data = await $fetch(`http://localhost:3000/api/v1/departements/${search}`);
+  } else {
+    data = await $fetch(`http://localhost:3000/api/v1/departements`);
+  }
+  res.writeHead(200, { "Content-Type": "application/json" });
+  res.write(JSON.stringify(data));
+  res.end();
+};
+
+const departements$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': departements
+});
+
+const STATIC_ASSETS_BASE = "/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/dist" + "/" + "1640600423";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/dist/server/client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('/Users/anders/Desktop/work/nuxt/site-nuxt/Helpers/.nuxt/dist/server/server.mjs'));
